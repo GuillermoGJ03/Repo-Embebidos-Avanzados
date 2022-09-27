@@ -1,5 +1,5 @@
 Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o: \
- C:/Users/Ponchito/Desktop/STM32/Lab1/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c \
+ C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_1/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../Core/Inc/stm32h7xx_hal_conf.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \

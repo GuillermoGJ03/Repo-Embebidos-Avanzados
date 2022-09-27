@@ -61,8 +61,8 @@ all: main-build
 main-build: Lab1_CM7.elf secondary-outputs
 
 # Tool invocations
-Lab1_CM7.elf Lab1_CM7.map: $(OBJS) $(USER_OBJS) C:\Users\Ponchito\Desktop\STM32\Lab1\CM7\STM32H745ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Lab1_CM7.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\STM32\Lab1\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab1_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Lab1_CM7.elf Lab1_CM7.map: $(OBJS) $(USER_OBJS) C:\Users\Ponchito\Documents\Repo-Embebidos-Avanzados\Laboratorios\Lab_1\Ejercicio_Extra\CM7\STM32H745ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Lab1_CM7.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\Ponchito\Documents\Repo-Embebidos-Avanzados\Laboratorios\Lab_1\Ejercicio_Extra\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab1_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
