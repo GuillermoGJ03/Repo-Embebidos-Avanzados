@@ -1,0 +1,10 @@
+23:20:21 **** Incremental Build of configuration Debug for project Ejercicio_extra_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_extra_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Ejercicio_extra_CM4.elf
+Finished building: default.size.stdout
+ 
+
+23:20:21 Build Finished. 0 errors, 0 warnings. (took 314ms)
+

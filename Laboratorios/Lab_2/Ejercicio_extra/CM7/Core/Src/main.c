@@ -55,8 +55,6 @@
 
 I2C_HandleTypeDef hi2c4;
 
-TIM_HandleTypeDef htim2;
-
 UART_HandleTypeDef huart3;
 
 PCD_HandleTypeDef hpcd_USB_OTG_FS;
@@ -70,7 +68,9 @@ int16_t acc_Z_read = 0;
 int16_t gyr_X_read = 0;
 int16_t gyr_Y_read = 0;
 int16_t gyr_Z_read = 0;
+int16_t temp_read = 0;
 
+float temp;
 float acc_X, acc_Y, acc_Z, gyr_X, gyr_Y, gyr_Z;
 
 
@@ -79,7 +79,7 @@ HAL_StatusTypeDef status;
 char uart_buf[50];
 uint16_t uart_buf_len;
 
-uint8_t Rx_data[5];
+uint8_t Rx_data[1];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -88,16 +88,16 @@ static void MX_GPIO_Init(void);
 static void MX_USART3_UART_Init(void);
 static void MX_USB_OTG_FS_PCD_Init(void);
 static void MX_I2C4_Init(void);
-static void MX_TIM2_Init(void);
 /* USER CODE BEGIN PFP */
 static void MPU6050_init(void);
 static void MPU6050_read_acc(void);
 static void MPU6050_read_gyro(void);
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart);
+
 /* USER CODE END 0 */
 
 /**
@@ -160,15 +160,15 @@ Error_Handler();
   MX_USART3_UART_Init();
   MX_USB_OTG_FS_PCD_Init();
   MX_I2C4_Init();
-  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-  HAL_UART_Receive_IT(&huart3, Rx_data, 10);
+  HAL_UART_Receive_IT(&huart3, Rx_data, 4);
 
   // Revisión de conexión del dispositivo
   status = HAL_I2C_IsDeviceReady(&hi2c4, MPU6050_ADDR, 1, 3000);
   if (status == HAL_OK) HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, SET);
   else HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, SET);
   HAL_Delay(500);
+
   // Inicialización del MPU6050
   MPU6050_init();
 
@@ -185,10 +185,7 @@ Error_Handler();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  MPU6050_read_acc();
-	  MPU6050_read_gyro();
 
-	  HAL_Delay(500);
   }
   /* USER CODE END 3 */
 }
@@ -300,51 +297,6 @@ static void MX_I2C4_Init(void)
   /* USER CODE BEGIN I2C4_Init 2 */
 
   /* USER CODE END I2C4_Init 2 */
-
-}
-
-/**
-  * @brief TIM2 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_TIM2_Init(void)
-{
-
-  /* USER CODE BEGIN TIM2_Init 0 */
-
-  /* USER CODE END TIM2_Init 0 */
-
-  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
-  TIM_MasterConfigTypeDef sMasterConfig = {0};
-
-  /* USER CODE BEGIN TIM2_Init 1 */
-
-  /* USER CODE END TIM2_Init 1 */
-  htim2.Instance = TIM2;
-  htim2.Init.Prescaler = 48000;
-  htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 5000;
-  htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
-  htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
-  if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
-  if (HAL_TIM_ConfigClockSource(&htim2, &sClockSourceConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
-  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
-  if (HAL_TIMEx_MasterConfigSynchronization(&htim2, &sMasterConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN TIM2_Init 2 */
-
-  /* USER CODE END TIM2_Init 2 */
 
 }
 
@@ -508,28 +460,46 @@ void MPU6050_read_gyro(void){
 	gyr_Z = gyr_Z_read/131.0;
 }
 
+void MPU6050_read_temp(void){
+	uint8_t read_temp[2];
+
+	HAL_I2C_Mem_Read(&hi2c4, MPU6050_ADDR, TEMP_OUT_H, 1, read_temp, 2, 3000);
+
+	temp_read = (int16_t)(read_temp[0] << 8 | read_temp[1]);
+
+	temp = (temp_read/340.0) + 36.53;
+}
+
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
-	if(Rx_data[0] == 65 | Rx_data[0] == 97){
-		uart_buf_len = sprintf(uart_buf, "AccX = %.2f m/s^2 \r\n", acc_X);
-		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-		uart_buf_len = sprintf(uart_buf, "AccY = %.2f m/s^2 \r\n", acc_Y);
-		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-		uart_buf_len = sprintf(uart_buf, "AccZ = %.2f m/s^2 \r\n", acc_Z);
-		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-	} else if(Rx_data[0] == 71 | Rx_data[0] == 103){
-		uart_buf_len = sprintf(uart_buf, "GyrX = %.2f °/s \r\n", gyr_X);
-		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-		uart_buf_len = sprintf(uart_buf, "GyrY = %.2f °/s \r\n", gyr_Y);
-		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-		uart_buf_len = sprintf(uart_buf, "GyrZ = %.2f °/s \r\n\n", gyr_Z);
-		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-	} else if(Rx_data[0] == 84 | Rx_data[0] == 116){
-		uart_buf_len = sprintf(uart_buf, "Temp: \r\n");
-	} else{
-		uart_buf_len = sprintf(uart_buf, "NA\r\n");
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
+	if(huart == &huart3){
+		if(Rx_data[0] == 'a' | Rx_data[0] == 'A'){
+			MPU6050_read_acc();
+			uart_buf_len = sprintf(uart_buf, "AccX = %.2f m/s^2 \r\n", acc_X);
+			HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+			uart_buf_len = sprintf(uart_buf, "AccY = %.2f m/s^2 \r\n", acc_Y);
+			HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+			uart_buf_len = sprintf(uart_buf, "AccZ = %.2f m/s^2 \r\n", acc_Z);
+			HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		} else if(Rx_data[0] == 'g' | Rx_data[0] == 'G'){
+			MPU6050_read_gyro();
+			uart_buf_len = sprintf(uart_buf, "GyrX = %.2f °/s \r\n", gyr_X);
+			HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+			uart_buf_len = sprintf(uart_buf, "GyrY = %.2f °/s \r\n", gyr_Y);
+			HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+			uart_buf_len = sprintf(uart_buf, "GyrZ = %.2f °/s \r\n\n", gyr_Z);
+			HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		} else if(Rx_data[0] == 't' | Rx_data[0] == 'T'){
+			MPU6050_read_temp();
+			uart_buf_len = sprintf(uart_buf, "Temp: %.2f \r\n", temp);
+			HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		} else{
+			uart_buf_len = sprintf(uart_buf, "NA\r\n");
+			HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		}
 	}
 
-	HAL_UART_Receive_IT(&huart3, Rx_data, 1); //Reinicia la interrupcion
+	HAL_UART_Receive_IT(&huart3, Rx_data, 4); //Reinicia la interrupcion
 
 }
 

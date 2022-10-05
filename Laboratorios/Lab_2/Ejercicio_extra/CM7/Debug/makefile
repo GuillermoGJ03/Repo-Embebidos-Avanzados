@@ -61,8 +61,8 @@ all: main-build
 main-build: Ejercicio_extra_CM7.elf secondary-outputs
 
 # Tool invocations
-Ejercicio_extra_CM7.elf Ejercicio_extra_CM7.map: $(OBJS) $(USER_OBJS) C:\Users\Guillermo\Documents\Embebidos_Avanzados\Laboratorios\Lab_2\Ejercicio_extra\CM7\STM32H745ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -u _printf_float -o "Ejercicio_extra_CM7.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\Guillermo\Documents\Embebidos_Avanzados\Laboratorios\Lab_2\Ejercicio_extra\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ejercicio_extra_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Ejercicio_extra_CM7.elf Ejercicio_extra_CM7.map: $(OBJS) $(USER_OBJS) C:\Users\Ponchito\Documents\Repo-Embebidos-Avanzados\Laboratorios\Lab_2\Ejercicio_extra\CM7\STM32H745ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -u _printf_float -o "Ejercicio_extra_CM7.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\Ponchito\Documents\Repo-Embebidos-Avanzados\Laboratorios\Lab_2\Ejercicio_extra\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ejercicio_extra_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
