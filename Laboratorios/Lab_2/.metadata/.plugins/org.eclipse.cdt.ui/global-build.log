@@ -1,360 +1,18 @@
-22:54:15 **** Clean-only build of configuration Debug for project Ejercicio_extra_CM4 ****
-make -j8 clean 
-rm -rf ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.su
-rm -rf ./Core/Startup/startup_stm32h745zitx.d ./Core/Startup/startup_stm32h745zitx.o
-rm -rf ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32h7xx_hal_msp.d ./Core/Src/stm32h7xx_hal_msp.o ./Core/Src/stm32h7xx_hal_msp.su ./Core/Src/stm32h7xx_it.d ./Core/Src/stm32h7xx_it.o ./Core/Src/stm32h7xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su
-rm -rf ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.su
-rm -rf Ejercicio_extra_CM4.elf Ejercicio_extra_CM4.list Ejercicio_extra_CM4.map default.size.stdout
- 
-22:54:15 **** Build of configuration Debug for project Ejercicio_extra_CM4 ****
+00:22:50 **** Incremental Build of configuration Debug for project Ejercicio_3_CM7 ****
 make -j8 all 
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o"
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32h745zitx.d" -MT"Core/Startup/startup_stm32h745zitx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32h745zitx.o" "../Core/Startup/startup_stm32h745zitx.s"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/stm32h7xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_hal_msp.d" -MT"Core/Src/stm32h7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_hal_msp.o"
-arm-none-eabi-gcc "../Core/Src/stm32h7xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_it.d" -MT"Core/Src/stm32h7xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_it.o"
-arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
-arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d" -MT"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o"
-arm-none-eabi-gcc -o "Ejercicio_extra_CM4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Ponchito\Documents\Repo-Embebidos-Avanzados\Laboratorios\Lab_2\Ejercicio_Extra\CM4\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ejercicio_extra_CM4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Ejercicio_extra_CM4.elf
- 
-arm-none-eabi-size   Ejercicio_extra_CM4.elf 
-arm-none-eabi-objdump -h -S  Ejercicio_extra_CM4.elf  > "Ejercicio_extra_CM4.list"
-   text	   data	    bss	    dec	    hex	filename
-   3128	     24	   1568	   4720	   1270	Ejercicio_extra_CM4.elf
-Finished building: default.size.stdout
- 
-Finished building: Ejercicio_extra_CM4.list
- 
-22:54:19 **** Clean-only build of configuration Debug for project Ejercicio_extra_CM7 ****
-make -j8 clean 
-rm -rf ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pcd.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pcd.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pcd.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pcd_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pcd_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pcd_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_usb.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_usb.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_usb.su
-rm -rf ./Core/Startup/startup_stm32h745zitx.d ./Core/Startup/startup_stm32h745zitx.o
-rm -rf ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32h7xx_hal_msp.d ./Core/Src/stm32h7xx_hal_msp.o ./Core/Src/stm32h7xx_hal_msp.su ./Core/Src/stm32h7xx_it.d ./Core/Src/stm32h7xx_it.o ./Core/Src/stm32h7xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su
-rm -rf ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.su
-rm -rf Ejercicio_extra_CM7.elf Ejercicio_extra_CM7.list Ejercicio_extra_CM7.map default.size.stdout
- 
-22:54:19 **** Build of configuration Debug for project Ejercicio_extra_CM7 ****
-make -j8 all 
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pcd.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pcd.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pcd.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pcd_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pcd_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pcd_ex.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_usb.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_usb.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_usb.o"
-arm-none-eabi-gcc -mcpu=cortex-m7 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32h745zitx.d" -MT"Core/Startup/startup_stm32h745zitx.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32h745zitx.o" "../Core/Startup/startup_stm32h745zitx.s"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/stm32h7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_hal_msp.d" -MT"Core/Src/stm32h7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_hal_msp.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:177:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  177 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                              ^~~~~~~~~
-      |                              |
-      |                              char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c: In function 'MPU6050_init':
-../Core/Src/main.c:468:29: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  468 |  HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                             ^~~~~~~~~
-      |                             |
-      |                             char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
-../Core/Src/main.c:512:16: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
-  512 |  if(Rx_data[0] == 65 | Rx_data[0] == 97){
-      |     ~~~~~~~~~~~^~~~~
-../Core/Src/main.c:514:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  514 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                              ^~~~~~~~~
-      |                              |
-      |                              char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:516:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  516 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                              ^~~~~~~~~
-      |                              |
-      |                              char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:518:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  518 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                              ^~~~~~~~~
-      |                              |
-      |                              char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:519:23: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
-  519 |  } else if(Rx_data[0] == 71 | Rx_data[0] == 103){
-      |            ~~~~~~~~~~~^~~~~
-../Core/Src/main.c:521:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  521 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                              ^~~~~~~~~
-      |                              |
-      |                              char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:523:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  523 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                              ^~~~~~~~~
-      |                              |
-      |                              char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:525:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  525 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                              ^~~~~~~~~
-      |                              |
-      |                              char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:526:23: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
-  526 |  } else if(Rx_data[0] == 84 | Rx_data[0] == 116){
-      |            ~~~~~~~~~~~^~~~~
-arm-none-eabi-gcc "../Core/Src/stm32h7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_it.d" -MT"Core/Src/stm32h7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_it.o"
-arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
-arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_Extra/Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d" -MT"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o"
-arm-none-eabi-gcc -u _printf_float -o "Ejercicio_extra_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Documents\Repo-Embebidos-Avanzados\Laboratorios\Lab_2\Ejercicio_Extra\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ejercicio_extra_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Ejercicio_extra_CM7.elf
- 
-arm-none-eabi-size   Ejercicio_extra_CM7.elf 
-arm-none-eabi-objdump -h -S  Ejercicio_extra_CM7.elf  > "Ejercicio_extra_CM7.list"
-   text	   data	    bss	    dec	    hex	filename
-  50788	    488	   3280	  54556	   d51c	Ejercicio_extra_CM7.elf
-Finished building: default.size.stdout
- 
-Finished building: Ejercicio_extra_CM7.list
- 
-23:01:31 **** Build of configuration Debug for project Ejercicio_3_CM4 ****
-make -j8 all 
-arm-none-eabi-size   Ejercicio_3_CM4.elf 
-   text	   data	    bss	    dec	    hex	filename
-   3128	     24	   1568	   4720	   1270	Ejercicio_3_CM4.elf
-Finished building: default.size.stdout
- 
-23:01:32 **** Build of configuration Debug for project Ejercicio_3_CM7 ****
-make -j8 all 
-arm-none-eabi-gcc -u_printf_float "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:174:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  174 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                              ^~~~~~~~~
-      |                              |
-      |                              char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:189:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  189 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:191:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  191 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:193:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  193 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:197:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  197 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:199:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  199 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:201:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  201 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c: In function 'MPU6050_init':
-../Core/Src/main.c:480:29: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  480 |  HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                             ^~~~~~~~~
-      |                             |
-      |                             char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-arm-none-eabi-gcc -u_printf_float -o "Ejercicio_3_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab2\Ejercicio_3\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ejercicio_3_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Ejercicio_3_CM7.elf
- 
 arm-none-eabi-size   Ejercicio_3_CM7.elf 
-arm-none-eabi-objdump -h -S  Ejercicio_3_CM7.elf  > "Ejercicio_3_CM7.list"
    text	   data	    bss	    dec	    hex	filename
   43204	    488	   3272	  46964	   b774	Ejercicio_3_CM7.elf
 Finished building: default.size.stdout
  
-Finished building: Ejercicio_3_CM7.list
- 
-23:01:33 **** Build of configuration Debug for project Ejercicio_extra_CM4 ****
+00:22:59 **** Incremental Build of configuration Debug for project Ejercicio_3_CM7 ****
 make -j8 all 
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o"
-arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d" -MT"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o"
-arm-none-eabi-gcc -o "Ejercicio_extra_CM4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Ponchito\Documents\Repo-Embebidos-Avanzados\Laboratorios\Lab_2\Ejercicio_extra\CM4\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ejercicio_extra_CM4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Ejercicio_extra_CM4.elf
- 
-arm-none-eabi-size   Ejercicio_extra_CM4.elf 
-arm-none-eabi-objdump -h -S  Ejercicio_extra_CM4.elf  > "Ejercicio_extra_CM4.list"
+arm-none-eabi-size   Ejercicio_3_CM7.elf 
    text	   data	    bss	    dec	    hex	filename
-   3128	     24	   1568	   4720	   1270	Ejercicio_extra_CM4.elf
+  43204	    488	   3272	  46964	   b774	Ejercicio_3_CM7.elf
 Finished building: default.size.stdout
  
-Finished building: Ejercicio_extra_CM4.list
- 
-23:01:37 **** Build of configuration Debug for project Ejercicio_extra_CM7 ****
+00:36:26 **** Incremental Build of configuration Debug for project Ejercicio_extra_CM7 ****
 make -j8 all 
 arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o"
 arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o"
@@ -379,6 +37,141 @@ arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laborato
 arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o"
 arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.o"
 arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_usb.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_usb.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_usb.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  177 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                              ^~~~~~~~~
+      |                              |
+      |                              char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'MPU6050_init':
+../Core/Src/main.c:420:29: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  420 |  HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                             ^~~~~~~~~
+      |                             |
+      |                             char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:476:17: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
+  476 |   if(Rx_data[0] == 'a' | Rx_data[0] == 'A'){
+      |      ~~~~~~~~~~~^~~~~~
+../Core/Src/main.c:479:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  479 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                               ^~~~~~~~~
+      |                               |
+      |                               char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:481:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  481 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                               ^~~~~~~~~
+      |                               |
+      |                               char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:483:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  483 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                               ^~~~~~~~~
+      |                               |
+      |                               char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:484:24: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
+  484 |   } else if(Rx_data[0] == 'g' | Rx_data[0] == 'G'){
+      |             ~~~~~~~~~~~^~~~~~
+../Core/Src/main.c:487:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  487 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                               ^~~~~~~~~
+      |                               |
+      |                               char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:489:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  489 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                               ^~~~~~~~~
+      |                               |
+      |                               char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:491:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  491 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                               ^~~~~~~~~
+      |                               |
+      |                               char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:492:24: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
+  492 |   } else if(Rx_data[0] == 't' | Rx_data[0] == 'T'){
+      |             ~~~~~~~~~~~^~~~~~
+../Core/Src/main.c:495:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  495 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                               ^~~~~~~~~
+      |                               |
+      |                               char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:498:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  498 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                               ^~~~~~~~~
+      |                               |
+      |                               char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_hal_msp.d" -MT"Core/Src/stm32h7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_it.d" -MT"Core/Src/stm32h7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_it.o"
 arm-none-eabi-gcc "C:/Users/Ponchito/Documents/Repo-Embebidos-Avanzados/Laboratorios/Lab_2/Ejercicio_extra/Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d" -MT"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o"
 arm-none-eabi-gcc -u _printf_float -o "Ejercicio_extra_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Documents\Repo-Embebidos-Avanzados\Laboratorios\Lab_2\Ejercicio_extra\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ejercicio_extra_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: Ejercicio_extra_CM7.elf
@@ -386,485 +179,22 @@ Finished building target: Ejercicio_extra_CM7.elf
 arm-none-eabi-size   Ejercicio_extra_CM7.elf 
 arm-none-eabi-objdump -h -S  Ejercicio_extra_CM7.elf  > "Ejercicio_extra_CM7.list"
    text	   data	    bss	    dec	    hex	filename
-  50788	    488	   3280	  54556	   d51c	Ejercicio_extra_CM7.elf
+  49236	    488	   3208	  52932	   cec4	Ejercicio_extra_CM7.elf
 Finished building: default.size.stdout
  
 Finished building: Ejercicio_extra_CM7.list
  
-23:01:52 **** Incremental Build of configuration Debug for project Ejercicio_extra_CM7 ****
+00:37:07 **** Incremental Build of configuration Debug for project Ejercicio_extra_CM7 ****
 make -j8 all 
 arm-none-eabi-size   Ejercicio_extra_CM7.elf 
    text	   data	    bss	    dec	    hex	filename
-  50788	    488	   3280	  54556	   d51c	Ejercicio_extra_CM7.elf
+  49236	    488	   3208	  52932	   cec4	Ejercicio_extra_CM7.elf
 Finished building: default.size.stdout
  
-23:12:07 **** Incremental Build of configuration Debug for project Ejercicio_3_CM4 ****
-make -j8 all 
-arm-none-eabi-size   Ejercicio_3_CM4.elf 
-   text	   data	    bss	    dec	    hex	filename
-   3128	     24	   1568	   4720	   1270	Ejercicio_3_CM4.elf
-Finished building: default.size.stdout
- 
-23:12:08 **** Incremental Build of configuration Debug for project Ejercicio_3_CM7 ****
-make -j8 all 
-arm-none-eabi-size   Ejercicio_3_CM7.elf 
-   text	   data	    bss	    dec	    hex	filename
-  43204	    488	   3272	  46964	   b774	Ejercicio_3_CM7.elf
-Finished building: default.size.stdout
- 
-23:12:08 **** Incremental Build of configuration Debug for project Ejercicio_extra_CM4 ****
-make -j8 all 
-arm-none-eabi-size   Ejercicio_extra_CM4.elf 
-   text	   data	    bss	    dec	    hex	filename
-   3128	     24	   1568	   4720	   1270	Ejercicio_extra_CM4.elf
-Finished building: default.size.stdout
- 
-23:12:09 **** Incremental Build of configuration Debug for project Ejercicio_extra_CM7 ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:178:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  178 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                              ^~~~~~~~~
-      |                              |
-      |                              char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c: In function 'MPU6050_init':
-../Core/Src/main.c:469:29: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  469 |  HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                             ^~~~~~~~~
-      |                             |
-      |                             char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
-../Core/Src/main.c:514:17: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
-  514 |   if(Rx_data[0] == 'a' | Rx_data[0] == 'A'){
-      |      ~~~~~~~~~~~^~~~~~
-../Core/Src/main.c:516:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  516 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:518:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  518 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:520:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  520 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:521:24: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
-  521 |   } else if(Rx_data[0] == 'g' | Rx_data[0] == 'G'){
-      |             ~~~~~~~~~~~^~~~~~
-../Core/Src/main.c:523:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  523 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:525:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  525 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:527:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  527 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:528:24: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
-  528 |   } else if(Rx_data[0] == 't' | Rx_data[0] == 'T'){
-      |             ~~~~~~~~~~~^~~~~~
-arm-none-eabi-gcc -u _printf_float -o "Ejercicio_extra_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Documents\Repo-Embebidos-Avanzados\Laboratorios\Lab_2\Ejercicio_extra\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ejercicio_extra_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Ejercicio_extra_CM7.elf
- 
-arm-none-eabi-size   Ejercicio_extra_CM7.elf 
-arm-none-eabi-objdump -h -S  Ejercicio_extra_CM7.elf  > "Ejercicio_extra_CM7.list"
-   text	   data	    bss	    dec	    hex	filename
-  50804	    488	   3280	  54572	   d52c	Ejercicio_extra_CM7.elf
-Finished building: default.size.stdout
- 
-Finished building: Ejercicio_extra_CM7.list
- 
-23:12:13 **** Incremental Build of configuration Debug for project Ejercicio_extra_CM7 ****
+00:37:14 **** Incremental Build of configuration Debug for project Ejercicio_extra_CM7 ****
 make -j8 all 
 arm-none-eabi-size   Ejercicio_extra_CM7.elf 
    text	   data	    bss	    dec	    hex	filename
-  50804	    488	   3280	  54572	   d52c	Ejercicio_extra_CM7.elf
-Finished building: default.size.stdout
- 
-23:16:49 **** Incremental Build of configuration Debug for project Ejercicio_extra_CM7 ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:181:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  181 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                              ^~~~~~~~~
-      |                              |
-      |                              char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c: In function 'MPU6050_init':
-../Core/Src/main.c:469:29: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  469 |  HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                             ^~~~~~~~~
-      |                             |
-      |                             char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
-../Core/Src/main.c:524:17: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
-  524 |   if(Rx_data[0] == 'a' | Rx_data[0] == 'A'){
-      |      ~~~~~~~~~~~^~~~~~
-../Core/Src/main.c:527:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  527 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:529:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  529 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:531:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  531 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:532:24: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
-  532 |   } else if(Rx_data[0] == 'g' | Rx_data[0] == 'G'){
-      |             ~~~~~~~~~~~^~~~~~
-../Core/Src/main.c:535:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  535 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:537:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  537 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:539:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  539 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:540:24: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
-  540 |   } else if(Rx_data[0] == 't' | Rx_data[0] == 'T'){
-      |             ~~~~~~~~~~~^~~~~~
-../Core/Src/main.c:543:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  543 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:546:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  546 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-arm-none-eabi-gcc -u _printf_float -o "Ejercicio_extra_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Documents\Repo-Embebidos-Avanzados\Laboratorios\Lab_2\Ejercicio_extra\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ejercicio_extra_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Ejercicio_extra_CM7.elf
- 
-arm-none-eabi-size   Ejercicio_extra_CM7.elf 
-arm-none-eabi-objdump -h -S  Ejercicio_extra_CM7.elf  > "Ejercicio_extra_CM7.list"
-   text	   data	    bss	    dec	    hex	filename
-  50980	    488	   3280	  54748	   d5dc	Ejercicio_extra_CM7.elf
-Finished building: default.size.stdout
- 
-Finished building: Ejercicio_extra_CM7.list
- 
-23:20:20 **** Incremental Build of configuration Debug for project Ejercicio_3_CM4 ****
-make -j8 all 
-arm-none-eabi-size   Ejercicio_3_CM4.elf 
-   text	   data	    bss	    dec	    hex	filename
-   3128	     24	   1568	   4720	   1270	Ejercicio_3_CM4.elf
-Finished building: default.size.stdout
- 
-23:20:20 **** Incremental Build of configuration Debug for project Ejercicio_3_CM7 ****
-make -j8 all 
-arm-none-eabi-size   Ejercicio_3_CM7.elf 
-   text	   data	    bss	    dec	    hex	filename
-  43204	    488	   3272	  46964	   b774	Ejercicio_3_CM7.elf
-Finished building: default.size.stdout
- 
-23:20:21 **** Incremental Build of configuration Debug for project Ejercicio_extra_CM4 ****
-make -j8 all 
-arm-none-eabi-size   Ejercicio_extra_CM4.elf 
-   text	   data	    bss	    dec	    hex	filename
-   3128	     24	   1568	   4720	   1270	Ejercicio_extra_CM4.elf
-Finished building: default.size.stdout
- 
-23:20:21 **** Incremental Build of configuration Debug for project Ejercicio_extra_CM7 ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:181:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  181 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                              ^~~~~~~~~
-      |                              |
-      |                              char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c: In function 'MPU6050_init':
-../Core/Src/main.c:469:29: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  469 |  HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                             ^~~~~~~~~
-      |                             |
-      |                             char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
-../Core/Src/main.c:525:17: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
-  525 |   if(Rx_data[0] == 'a' | Rx_data[0] == 'A'){
-      |      ~~~~~~~~~~~^~~~~~
-../Core/Src/main.c:528:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  528 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:530:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  530 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:532:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  532 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:533:24: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
-  533 |   } else if(Rx_data[0] == 'g' | Rx_data[0] == 'G'){
-      |             ~~~~~~~~~~~^~~~~~
-../Core/Src/main.c:536:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  536 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:538:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  538 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:540:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  540 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:541:24: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
-  541 |   } else if(Rx_data[0] == 't' | Rx_data[0] == 'T'){
-      |             ~~~~~~~~~~~^~~~~~
-../Core/Src/main.c:544:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  544 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-../Core/Src/main.c:547:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
-  547 |    HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-      |                               ^~~~~~~~~
-      |                               |
-      |                               char (*)[50]
-In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
-                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
- 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                                ~~~~~~~~~~~~~~~^~~~~
-arm-none-eabi-gcc -u _printf_float -o "Ejercicio_extra_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Documents\Repo-Embebidos-Avanzados\Laboratorios\Lab_2\Ejercicio_extra\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ejercicio_extra_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Ejercicio_extra_CM7.elf
- 
-arm-none-eabi-size   Ejercicio_extra_CM7.elf 
-arm-none-eabi-objdump -h -S  Ejercicio_extra_CM7.elf  > "Ejercicio_extra_CM7.list"
-   text	   data	    bss	    dec	    hex	filename
-  51044	    488	   3280	  54812	   d61c	Ejercicio_extra_CM7.elf
-Finished building: default.size.stdout
- 
-Finished building: Ejercicio_extra_CM7.list
- 
-23:20:25 **** Incremental Build of configuration Debug for project Ejercicio_extra_CM7 ****
-make -j8 all 
-arm-none-eabi-size   Ejercicio_extra_CM7.elf 
-   text	   data	    bss	    dec	    hex	filename
-  51044	    488	   3280	  54812	   d61c	Ejercicio_extra_CM7.elf
+  49236	    488	   3208	  52932	   cec4	Ejercicio_extra_CM7.elf
 Finished building: default.size.stdout
  

@@ -1,4 +1,4 @@
-18:27:10 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+00:18:25 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
 make -j8 all 
 arm-none-eabi-size   Ejercicio_2_CM7.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size   Ejercicio_2_CM7.elf
 Finished building: default.size.stdout
  
 
-18:27:10 Build Finished. 0 errors, 0 warnings. (took 219ms)
+00:18:25 Build Finished. 0 errors, 0 warnings. (took 298ms)
 
