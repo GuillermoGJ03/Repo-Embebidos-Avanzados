@@ -522,7 +522,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
 		uart_buf_len = sprintf(uart_buf, "GyrY = %.2f °/s \r\n", gyr_Y);
 		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
 		uart_buf_len = sprintf(uart_buf, "GyrZ = %.2f °/s \r\n\n", gyr_Z);
-		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 1s00);
+		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
 	} else if(Rx_data[0] == 84 | Rx_data[0] == 116){
 		uart_buf_len = sprintf(uart_buf, "Temp: \r\n");
 	} else{
