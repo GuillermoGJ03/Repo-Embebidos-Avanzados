@@ -153,6 +153,8 @@ Error_Handler();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    /*El siguiente código cuenta con el timer el delay que se coloca en la línea 158 
+    y lo manda por UART de vuelta a la computadora para leer con el monitor serial*/
 	  timer_val = __HAL_TIM_GET_COUNTER(&htim2);
 	  HAL_Delay(150);
 	  timer_val = __HAL_TIM_GET_COUNTER(&htim2) - timer_val;
