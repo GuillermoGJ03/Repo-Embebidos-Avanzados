@@ -51,8 +51,8 @@
 
 I2C_HandleTypeDef hi2c4;
 
-TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim2;
+TIM_HandleTypeDef htim5;
 
 UART_HandleTypeDef huart3;
 
@@ -68,6 +68,7 @@ uint16_t uart_buf_len;
 
 float selSort_array[100];
 float bubSort_array[100];
+float temp_array[100];
 int count;
 
 
@@ -93,7 +94,7 @@ static void MX_GPIO_Init(void);
 static void MX_I2C4_Init(void);
 static void MX_TIM2_Init(void);
 static void MX_USART3_UART_Init(void);
-static void MX_TIM1_Init(void);
+static void MX_TIM5_Init(void);
 /* USER CODE BEGIN PFP */
 static void MPU6050_init(void);
 static void MPU6050_read_temp(void);
@@ -171,7 +172,7 @@ Error_Handler();
   MX_I2C4_Init();
   MX_TIM2_Init();
   MX_USART3_UART_Init();
-  MX_TIM1_Init();
+  MX_TIM5_Init();
   /* USER CODE BEGIN 2 */
   // Revisión de conexión del MPU6050
   HAL_StatusTypeDef status;
@@ -188,7 +189,7 @@ Error_Handler();
   MPU6050_init();
 
   //Inicialización de interrupciones por timer
-  HAL_TIM_Base_Start(&htim1);
+  HAL_TIM_Base_Start(&htim5);
   HAL_TIM_Base_Start_IT(&htim2);
 
   // Inicialización del LCD
@@ -351,53 +352,6 @@ static void MX_I2C4_Init(void)
 }
 
 /**
-  * @brief TIM1 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_TIM1_Init(void)
-{
-
-  /* USER CODE BEGIN TIM1_Init 0 */
-
-  /* USER CODE END TIM1_Init 0 */
-
-  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
-  TIM_MasterConfigTypeDef sMasterConfig = {0};
-
-  /* USER CODE BEGIN TIM1_Init 1 */
-
-  /* USER CODE END TIM1_Init 1 */
-  htim1.Instance = TIM1;
-  htim1.Init.Prescaler = 240;
-  htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim1.Init.Period = 65535;
-  htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
-  htim1.Init.RepetitionCounter = 0;
-  htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
-  if (HAL_TIM_Base_Init(&htim1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
-  if (HAL_TIM_ConfigClockSource(&htim1, &sClockSourceConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
-  sMasterConfig.MasterOutputTrigger2 = TIM_TRGO2_RESET;
-  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
-  if (HAL_TIMEx_MasterConfigSynchronization(&htim1, &sMasterConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN TIM1_Init 2 */
-
-  /* USER CODE END TIM1_Init 2 */
-
-}
-
-/**
   * @brief TIM2 Initialization Function
   * @param None
   * @retval None
@@ -439,6 +393,51 @@ static void MX_TIM2_Init(void)
   /* USER CODE BEGIN TIM2_Init 2 */
 
   /* USER CODE END TIM2_Init 2 */
+
+}
+
+/**
+  * @brief TIM5 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM5_Init(void)
+{
+
+  /* USER CODE BEGIN TIM5_Init 0 */
+
+  /* USER CODE END TIM5_Init 0 */
+
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+
+  /* USER CODE BEGIN TIM5_Init 1 */
+
+  /* USER CODE END TIM5_Init 1 */
+  htim5.Instance = TIM5;
+  htim5.Init.Prescaler = 240;
+  htim5.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim5.Init.Period = 4294967295;
+  htim5.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim5.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim5) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim5, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim5, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM5_Init 2 */
+
+  /* USER CODE END TIM5_Init 2 */
 
 }
 
@@ -569,6 +568,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 		MPU6050_read_temp();
 		selSort_array[count] = temp;
 		bubSort_array[count] = temp;
+		temp_array[count] = temp;
 
 		// Visualización de los datos en puerto serial y LCD
 		//lcd_clear();
@@ -653,49 +653,57 @@ int binarySearch(float *arr, int size, float value){
 
 void algorithms(void){
 	for(int16_t i = 0; i < 100; i++){
+		uart_buf_len = sprintf(uart_buf, "Muestra: %u\r\n", i);
+		HAL_UART_Transmit(&huart3, (uint8_t *)uart_buf, uart_buf_len, 100);
+
 		uart_buf_len = sprintf(uart_buf, "Selection Sort\r\n");
 		HAL_UART_Transmit(&huart3, (uint8_t *)uart_buf, uart_buf_len, 100);
-		timer_val = __HAL_TIM_GET_COUNTER(&htim1);
+		timer_val = __HAL_TIM_GET_COUNTER(&htim5);
 		selectionSort(selSort_array, size);
-		timer_val = __HAL_TIM_GET_COUNTER(&htim1) - timer_val;
+		timer_val = __HAL_TIM_GET_COUNTER(&htim5) - timer_val;
 		timeSelSort_us[i] = timer_val;
-		promSelSort =+ timer_val;
+		promSelSort += timer_val;
 		uart_buf_len = sprintf(uart_buf, "Tiempo transcurrido: %u us\r\n", timer_val);
 		HAL_UART_Transmit(&huart3, (uint8_t *)uart_buf, uart_buf_len, 100);
 
 		uart_buf_len = sprintf(uart_buf, "Bubble Sort\r\n");
 		HAL_UART_Transmit(&huart3, (uint8_t *)uart_buf, uart_buf_len, 100);
-		timer_val = __HAL_TIM_GET_COUNTER(&htim1);
-		bubbleSort(selSort_array, size);
-		timer_val = __HAL_TIM_GET_COUNTER(&htim1) - timer_val;
+		timer_val = __HAL_TIM_GET_COUNTER(&htim5);
+		bubbleSort(bubSort_array, size);
+		timer_val = __HAL_TIM_GET_COUNTER(&htim5) - timer_val;
 		timeBubSort_us[i] = timer_val;
-		promBubSort =+ timer_val;
+		promBubSort += timer_val;
 		uart_buf_len = sprintf(uart_buf, "Tiempo transcurrido: %u us\r\n", timer_val);
 		HAL_UART_Transmit(&huart3, (uint8_t *)uart_buf, uart_buf_len, 100);
 
 		uart_buf_len = sprintf(uart_buf, "Sequential Search\r\n");
 		HAL_UART_Transmit(&huart3, (uint8_t *)uart_buf, uart_buf_len, 100);
-		timer_val = __HAL_TIM_GET_COUNTER(&htim1);
-		index = sequentialSearch(selSort_array, size, selSort_array[34]);
-		timer_val = __HAL_TIM_GET_COUNTER(&htim1) - timer_val;
+		timer_val = __HAL_TIM_GET_COUNTER(&htim5);
+		index = sequentialSearch(selSort_array, size, temp_array[50]);
+		timer_val = __HAL_TIM_GET_COUNTER(&htim5) - timer_val;
 		timeSeqSearch_us[i] = timer_val;
-		promSeqSearch =+ timer_val;
+		promSeqSearch += timer_val;
 		uart_buf_len = sprintf(uart_buf, "Tiempo transcurrido: %u us\r\n", timer_val);
 		HAL_UART_Transmit(&huart3, (uint8_t *)uart_buf, uart_buf_len, 100);
-		uart_buf_len = sprintf(uart_buf, "Indice del valor %.2f: %u \r\n", selSort_array[34], index);
+		uart_buf_len = sprintf(uart_buf, "Indice del valor %.2f: %u \r\n", temp_array[50], index);
 		HAL_UART_Transmit(&huart3, (uint8_t *)uart_buf, uart_buf_len, 100);
 
 		uart_buf_len = sprintf(uart_buf, "Binary Search\r\n");
 		HAL_UART_Transmit(&huart3, (uint8_t *)uart_buf, uart_buf_len, 100);
-		timer_val = __HAL_TIM_GET_COUNTER(&htim1);
-		binarySearch(selSort_array, size, selSort_array[68]);
-		timer_val = __HAL_TIM_GET_COUNTER(&htim1) - timer_val;
+		timer_val = __HAL_TIM_GET_COUNTER(&htim5);
+		binarySearch(selSort_array, size, temp_array[50]);
+		timer_val = __HAL_TIM_GET_COUNTER(&htim5) - timer_val;
 		timeBinSearch_us[i] = timer_val;
-		promBinSearch =+ timer_val;
+		promBinSearch += timer_val;
 		uart_buf_len = sprintf(uart_buf, "Tiempo transcurrido: %u us\r\n", timer_val);
 		HAL_UART_Transmit(&huart3, (uint8_t *)uart_buf, uart_buf_len, 100);
-		uart_buf_len = sprintf(uart_buf, "Indice del valor %.2f: %u \r\n", selSort_array[34], index);
+		uart_buf_len = sprintf(uart_buf, "Indice del valor %.2f: %u \r\n", temp_array[50], index);
 		HAL_UART_Transmit(&huart3, (uint8_t *)uart_buf, uart_buf_len, 100);
+
+		for (int j = 0; j < 100; j++){
+			bubSort_array[j] = temp_array[j];
+			selSort_array[j] = temp_array[j];
+		}
 	}
 
 	promSelSort = promSelSort/100;

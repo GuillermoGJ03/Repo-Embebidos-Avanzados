@@ -5430,3 +5430,996 @@ arm-none-eabi-size   Ejercicio_2_CM7.elf
   44196	    488	   4472	  49156	   c004	Ejercicio_2_CM7.elf
 Finished building: default.size.stdout
  
+18:11:02 **** Incremental Build of configuration Debug for project Ejercicio_2_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_2_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Ejercicio_2_CM4.elf
+Finished building: default.size.stdout
+ 
+18:11:03 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_2_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44196	    488	   4472	  49156	   c004	Ejercicio_2_CM7.elf
+Finished building: default.size.stdout
+ 
+18:11:06 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_2_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44196	    488	   4472	  49156	   c004	Ejercicio_2_CM7.elf
+Finished building: default.size.stdout
+ 
+18:19:03 **** Incremental Build of configuration Debug for project Ejercicio_2_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_2_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Ejercicio_2_CM4.elf
+Finished building: default.size.stdout
+ 
+18:19:04 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:9: warning: built-in function 'index' declared as non-function [-Wbuiltin-declaration-mismatch]
+   78 | int16_t index;
+      |         ^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:185:18: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  185 |   uart_buf_len = sprintf(uart_buf, "MPU6050 Temp test\r\n");
+      |                  ^~~~~~~
+../Core/Src/main.c:185:18: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:186:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  186 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                              ^~~~~~~~~
+      |                              |
+      |                              char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:196:3: warning: implicit declaration of function 'lcd_init' [-Wimplicit-function-declaration]
+  196 |   lcd_init();
+      |   ^~~~~~~~
+../Core/Src/main.c:210:7: warning: implicit declaration of function 'lcd_clear' [-Wimplicit-function-declaration]
+  210 |       lcd_clear();
+      |       ^~~~~~~~~
+../Core/Src/main.c:211:7: warning: implicit declaration of function 'lcd_put_cur' [-Wimplicit-function-declaration]
+  211 |       lcd_put_cur(0, 0);
+      |       ^~~~~~~~~~~
+../Core/Src/main.c:212:7: warning: implicit declaration of function 'lcd_send_string' [-Wimplicit-function-declaration]
+  212 |       lcd_send_string("Selection Sort:");
+      |       ^~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:578:17: warning: incompatible implicit declaration of built-in function 'sprintf'
+  578 |   lcd_buf_len = sprintf(lcd_buf, "[%u] %.2f C", count, temp);
+      |                 ^~~~~~~
+../Core/Src/main.c:578:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:582:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  582 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                              ^~~~~~~~~
+      |                              |
+      |                              char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'algorithms':
+../Core/Src/main.c:658:18: warning: incompatible implicit declaration of built-in function 'sprintf'
+  658 |   uart_buf_len = sprintf(uart_buf, "Selection Sort\r\n");
+      |                  ^~~~~~~
+../Core/Src/main.c:658:18: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:702:17: error: assignment to expression with array type
+  702 |   bubSort_array = temp_array;
+      |                 ^
+../Core/Src/main.c:703:17: error: assignment to expression with array type
+  703 |   selSort_array = temp_array;
+      |                 ^
+../Core/Src/main.c: In function 'displayLoop':
+../Core/Src/main.c:716:17: warning: incompatible implicit declaration of built-in function 'sprintf'
+  716 |  uart_buf_len = sprintf(uart_buf, "Selection Sort: %.2f useg \r\n", promSelSort);
+      |                 ^~~~~~~
+../Core/Src/main.c:716:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'binarySearch':
+../Core/Src/main.c:654:1: warning: control reaches end of non-void function [-Wreturn-type]
+  654 | }
+      | ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+18:19:54 **** Incremental Build of configuration Debug for project Ejercicio_2_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_2_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Ejercicio_2_CM4.elf
+Finished building: default.size.stdout
+ 
+18:19:54 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:9: warning: built-in function 'index' declared as non-function [-Wbuiltin-declaration-mismatch]
+   78 | int16_t index;
+      |         ^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:185:18: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  185 |   uart_buf_len = sprintf(uart_buf, "MPU6050 Temp test\r\n");
+      |                  ^~~~~~~
+../Core/Src/main.c:185:18: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:186:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  186 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                              ^~~~~~~~~
+      |                              |
+      |                              char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:196:3: warning: implicit declaration of function 'lcd_init' [-Wimplicit-function-declaration]
+  196 |   lcd_init();
+      |   ^~~~~~~~
+../Core/Src/main.c:210:7: warning: implicit declaration of function 'lcd_clear' [-Wimplicit-function-declaration]
+  210 |       lcd_clear();
+      |       ^~~~~~~~~
+../Core/Src/main.c:211:7: warning: implicit declaration of function 'lcd_put_cur' [-Wimplicit-function-declaration]
+  211 |       lcd_put_cur(0, 0);
+      |       ^~~~~~~~~~~
+../Core/Src/main.c:212:7: warning: implicit declaration of function 'lcd_send_string' [-Wimplicit-function-declaration]
+  212 |       lcd_send_string("Selection Sort:");
+      |       ^~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:578:17: warning: incompatible implicit declaration of built-in function 'sprintf'
+  578 |   lcd_buf_len = sprintf(lcd_buf, "[%u] %.2f C", count, temp);
+      |                 ^~~~~~~
+../Core/Src/main.c:578:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:582:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  582 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                              ^~~~~~~~~
+      |                              |
+      |                              char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'algorithms':
+../Core/Src/main.c:658:18: warning: incompatible implicit declaration of built-in function 'sprintf'
+  658 |   uart_buf_len = sprintf(uart_buf, "Selection Sort\r\n");
+      |                  ^~~~~~~
+../Core/Src/main.c:658:18: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'displayLoop':
+../Core/Src/main.c:719:17: warning: incompatible implicit declaration of built-in function 'sprintf'
+  719 |  uart_buf_len = sprintf(uart_buf, "Selection Sort: %.2f useg \r\n", promSelSort);
+      |                 ^~~~~~~
+../Core/Src/main.c:719:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'binarySearch':
+../Core/Src/main.c:654:1: warning: control reaches end of non-void function [-Wreturn-type]
+  654 | }
+      | ^
+arm-none-eabi-gcc -u _printf_float -o "Ejercicio_2_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab3\Ejercicio_2\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ejercicio_2_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Ejercicio_2_CM7.elf
+ 
+arm-none-eabi-size   Ejercicio_2_CM7.elf 
+arm-none-eabi-objdump -h -S  Ejercicio_2_CM7.elf  > "Ejercicio_2_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  44292	    488	   4872	  49652	   c1f4	Ejercicio_2_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ejercicio_2_CM7.list
+ 
+18:20:01 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_2_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44292	    488	   4872	  49652	   c1f4	Ejercicio_2_CM7.elf
+Finished building: default.size.stdout
+ 
+18:25:19 **** Incremental Build of configuration Debug for project Ejercicio_2_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_2_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Ejercicio_2_CM4.elf
+Finished building: default.size.stdout
+ 
+18:25:20 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:9: warning: built-in function 'index' declared as non-function [-Wbuiltin-declaration-mismatch]
+   78 | int16_t index;
+      |         ^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:185:18: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  185 |   uart_buf_len = sprintf(uart_buf, "MPU6050 Temp test\r\n");
+      |                  ^~~~~~~
+../Core/Src/main.c:185:18: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:186:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  186 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                              ^~~~~~~~~
+      |                              |
+      |                              char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:196:3: warning: implicit declaration of function 'lcd_init' [-Wimplicit-function-declaration]
+  196 |   lcd_init();
+      |   ^~~~~~~~
+../Core/Src/main.c:210:7: warning: implicit declaration of function 'lcd_clear' [-Wimplicit-function-declaration]
+  210 |       lcd_clear();
+      |       ^~~~~~~~~
+../Core/Src/main.c:211:7: warning: implicit declaration of function 'lcd_put_cur' [-Wimplicit-function-declaration]
+  211 |       lcd_put_cur(0, 0);
+      |       ^~~~~~~~~~~
+../Core/Src/main.c:212:7: warning: implicit declaration of function 'lcd_send_string' [-Wimplicit-function-declaration]
+  212 |       lcd_send_string("Selection Sort:");
+      |       ^~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:578:17: warning: incompatible implicit declaration of built-in function 'sprintf'
+  578 |   lcd_buf_len = sprintf(lcd_buf, "[%u] %.2f C", count, temp);
+      |                 ^~~~~~~
+../Core/Src/main.c:578:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:582:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  582 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                              ^~~~~~~~~
+      |                              |
+      |                              char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'algorithms':
+../Core/Src/main.c:658:18: warning: incompatible implicit declaration of built-in function 'sprintf'
+  658 |   uart_buf_len = sprintf(uart_buf, "Muestra: %u\r\n", i);
+      |                  ^~~~~~~
+../Core/Src/main.c:658:18: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'displayLoop':
+../Core/Src/main.c:721:17: warning: incompatible implicit declaration of built-in function 'sprintf'
+  721 |  uart_buf_len = sprintf(uart_buf, "Selection Sort: %.2f useg \r\n", promSelSort);
+      |                 ^~~~~~~
+../Core/Src/main.c:721:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'binarySearch':
+../Core/Src/main.c:654:1: warning: control reaches end of non-void function [-Wreturn-type]
+  654 | }
+      | ^
+arm-none-eabi-gcc -u _printf_float -o "Ejercicio_2_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab3\Ejercicio_2\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ejercicio_2_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Ejercicio_2_CM7.elf
+ 
+arm-none-eabi-size   Ejercicio_2_CM7.elf 
+arm-none-eabi-objdump -h -S  Ejercicio_2_CM7.elf  > "Ejercicio_2_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  44356	    488	   4872	  49716	   c234	Ejercicio_2_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ejercicio_2_CM7.list
+ 
+18:25:26 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_2_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44356	    488	   4872	  49716	   c234	Ejercicio_2_CM7.elf
+Finished building: default.size.stdout
+ 
+18:29:56 **** Clean-only build of configuration Debug for project Ejercicio_2_CM4 ****
+make -j8 clean 
+rm -rf ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.su
+rm -rf ./Core/Startup/startup_stm32h745zitx.d ./Core/Startup/startup_stm32h745zitx.o
+rm -rf ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32h7xx_hal_msp.d ./Core/Src/stm32h7xx_hal_msp.o ./Core/Src/stm32h7xx_hal_msp.su ./Core/Src/stm32h7xx_it.d ./Core/Src/stm32h7xx_it.o ./Core/Src/stm32h7xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su
+rm -rf ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.su
+rm -rf Ejercicio_2_CM4.elf Ejercicio_2_CM4.list Ejercicio_2_CM4.map default.size.stdout
+ 
+18:29:56 **** Incremental Build of configuration Debug for project Ejercicio_2_CM4 ****
+make -j8 all 
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32h745zitx.d" -MT"Core/Startup/startup_stm32h745zitx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32h745zitx.o" "../Core/Startup/startup_stm32h745zitx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_hal_msp.d" -MT"Core/Src/stm32h7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_it.d" -MT"Core/Src/stm32h7xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d" -MT"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o"
+arm-none-eabi-gcc -o "Ejercicio_2_CM4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Ponchito\Desktop\Lab3\Ejercicio_2\CM4\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ejercicio_2_CM4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Ejercicio_2_CM4.elf
+ 
+arm-none-eabi-size   Ejercicio_2_CM4.elf 
+arm-none-eabi-objdump -h -S  Ejercicio_2_CM4.elf  > "Ejercicio_2_CM4.list"
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Ejercicio_2_CM4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ejercicio_2_CM4.list
+ 
+18:30:02 **** Clean-only build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 clean 
+rm -rf ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.su
+rm -rf ./Core/Startup/startup_stm32h745zitx.d ./Core/Startup/startup_stm32h745zitx.o
+rm -rf ./Core/Src/i2c-lcd.d ./Core/Src/i2c-lcd.o ./Core/Src/i2c-lcd.su ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32h7xx_hal_msp.d ./Core/Src/stm32h7xx_hal_msp.o ./Core/Src/stm32h7xx_hal_msp.su ./Core/Src/stm32h7xx_it.d ./Core/Src/stm32h7xx_it.o ./Core/Src/stm32h7xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su
+rm -rf ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.su
+rm -rf Ejercicio_2_CM7.elf Ejercicio_2_CM7.list Ejercicio_2_CM7.map default.size.stdout
+ 
+18:30:02 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m7 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32h745zitx.d" -MT"Core/Startup/startup_stm32h745zitx.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32h745zitx.o" "../Core/Startup/startup_stm32h745zitx.s"
+arm-none-eabi-gcc "../Core/Src/i2c-lcd.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/i2c-lcd.d" -MT"Core/Src/i2c-lcd.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/i2c-lcd.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_hal_msp.d" -MT"Core/Src/stm32h7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_it.d" -MT"Core/Src/stm32h7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_it.o"
+../Core/Src/main.c:78:9: warning: built-in function 'index' declared as non-function [-Wbuiltin-declaration-mismatch]
+   78 | int16_t index;
+      |         ^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:185:18: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  185 |   uart_buf_len = sprintf(uart_buf, "MPU6050 Temp test\r\n");
+      |                  ^~~~~~~
+../Core/Src/main.c:185:18: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:186:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  186 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                              ^~~~~~~~~
+      |                              |
+      |                              char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:196:3: warning: implicit declaration of function 'lcd_init' [-Wimplicit-function-declaration]
+  196 |   lcd_init();
+      |   ^~~~~~~~
+../Core/Src/main.c:210:7: warning: implicit declaration of function 'lcd_clear' [-Wimplicit-function-declaration]
+  210 |       lcd_clear();
+      |       ^~~~~~~~~
+../Core/Src/main.c:211:7: warning: implicit declaration of function 'lcd_put_cur' [-Wimplicit-function-declaration]
+  211 |       lcd_put_cur(0, 0);
+      |       ^~~~~~~~~~~
+../Core/Src/main.c:212:7: warning: implicit declaration of function 'lcd_send_string' [-Wimplicit-function-declaration]
+  212 |       lcd_send_string("Selection Sort:");
+      |       ^~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:578:17: warning: incompatible implicit declaration of built-in function 'sprintf'
+  578 |   lcd_buf_len = sprintf(lcd_buf, "[%u] %.2f C", count, temp);
+      |                 ^~~~~~~
+../Core/Src/main.c:578:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:582:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  582 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                              ^~~~~~~~~
+      |                              |
+      |                              char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'algorithms':
+../Core/Src/main.c:658:18: warning: incompatible implicit declaration of built-in function 'sprintf'
+  658 |   uart_buf_len = sprintf(uart_buf, "Muestra: %u\r\n", i);
+      |                  ^~~~~~~
+../Core/Src/main.c:658:18: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'displayLoop':
+../Core/Src/main.c:721:17: warning: incompatible implicit declaration of built-in function 'sprintf'
+  721 |  uart_buf_len = sprintf(uart_buf, "Selection Sort: %.2f useg \r\n", promSelSort);
+      |                 ^~~~~~~
+../Core/Src/main.c:721:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'binarySearch':
+../Core/Src/main.c:654:1: warning: control reaches end of non-void function [-Wreturn-type]
+  654 | }
+      | ^
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d" -MT"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o"
+arm-none-eabi-gcc -u _printf_float -o "Ejercicio_2_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab3\Ejercicio_2\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ejercicio_2_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Ejercicio_2_CM7.elf
+ 
+arm-none-eabi-size   Ejercicio_2_CM7.elf 
+arm-none-eabi-objdump -h -S  Ejercicio_2_CM7.elf  > "Ejercicio_2_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  44356	    488	   4872	  49716	   c234	Ejercicio_2_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ejercicio_2_CM7.list
+ 
+18:30:10 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_2_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44356	    488	   4872	  49716	   c234	Ejercicio_2_CM7.elf
+Finished building: default.size.stdout
+ 
+18:36:16 **** Incremental Build of configuration Debug for project Ejercicio_2_CM4 ****
+make -j8 all 
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_hal_msp.d" -MT"Core/Src/stm32h7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_it.d" -MT"Core/Src/stm32h7xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_it.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d" -MT"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o"
+arm-none-eabi-gcc -o "Ejercicio_2_CM4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Ponchito\Desktop\Lab3\Ejercicio_2\CM4\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ejercicio_2_CM4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Ejercicio_2_CM4.elf
+ 
+arm-none-eabi-size   Ejercicio_2_CM4.elf 
+arm-none-eabi-objdump -h -S  Ejercicio_2_CM4.elf  > "Ejercicio_2_CM4.list"
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Ejercicio_2_CM4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ejercicio_2_CM4.list
+ 
+18:36:19 **** Clean-only build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 clean 
+rm -rf ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.su
+rm -rf ./Core/Startup/startup_stm32h745zitx.d ./Core/Startup/startup_stm32h745zitx.o
+rm -rf ./Core/Src/i2c-lcd.d ./Core/Src/i2c-lcd.o ./Core/Src/i2c-lcd.su ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32h7xx_hal_msp.d ./Core/Src/stm32h7xx_hal_msp.o ./Core/Src/stm32h7xx_hal_msp.su ./Core/Src/stm32h7xx_it.d ./Core/Src/stm32h7xx_it.o ./Core/Src/stm32h7xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su
+rm -rf ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.su
+rm -rf Ejercicio_2_CM7.elf Ejercicio_2_CM7.list Ejercicio_2_CM7.map default.size.stdout
+ 
+18:36:19 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m7 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32h745zitx.d" -MT"Core/Startup/startup_stm32h745zitx.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32h745zitx.o" "../Core/Startup/startup_stm32h745zitx.s"
+arm-none-eabi-gcc "../Core/Src/i2c-lcd.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/i2c-lcd.d" -MT"Core/Src/i2c-lcd.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/i2c-lcd.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_hal_msp.d" -MT"Core/Src/stm32h7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_it.d" -MT"Core/Src/stm32h7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_it.o"
+../Core/Src/main.c:78:9: warning: built-in function 'index' declared as non-function [-Wbuiltin-declaration-mismatch]
+   78 | int16_t index;
+      |         ^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:185:18: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  185 |   uart_buf_len = sprintf(uart_buf, "MPU6050 Temp test\r\n");
+      |                  ^~~~~~~
+../Core/Src/main.c:185:18: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:186:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  186 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                              ^~~~~~~~~
+      |                              |
+      |                              char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:196:3: warning: implicit declaration of function 'lcd_init' [-Wimplicit-function-declaration]
+  196 |   lcd_init();
+      |   ^~~~~~~~
+../Core/Src/main.c:210:7: warning: implicit declaration of function 'lcd_clear' [-Wimplicit-function-declaration]
+  210 |       lcd_clear();
+      |       ^~~~~~~~~
+../Core/Src/main.c:211:7: warning: implicit declaration of function 'lcd_put_cur' [-Wimplicit-function-declaration]
+  211 |       lcd_put_cur(0, 0);
+      |       ^~~~~~~~~~~
+../Core/Src/main.c:212:7: warning: implicit declaration of function 'lcd_send_string' [-Wimplicit-function-declaration]
+  212 |       lcd_send_string("Selection Sort:");
+      |       ^~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:576:17: warning: incompatible implicit declaration of built-in function 'sprintf'
+  576 |   lcd_buf_len = sprintf(lcd_buf, "[%u] %.2f C", count, temp);
+      |                 ^~~~~~~
+../Core/Src/main.c:576:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:580:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  580 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                              ^~~~~~~~~
+      |                              |
+      |                              char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'algorithms':
+../Core/Src/main.c:656:18: warning: incompatible implicit declaration of built-in function 'sprintf'
+  656 |   uart_buf_len = sprintf(uart_buf, "Muestra: %u\r\n", i);
+      |                  ^~~~~~~
+../Core/Src/main.c:656:18: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'displayLoop':
+../Core/Src/main.c:719:17: warning: incompatible implicit declaration of built-in function 'sprintf'
+  719 |  uart_buf_len = sprintf(uart_buf, "Selection Sort: %.2f useg \r\n", promSelSort);
+      |                 ^~~~~~~
+../Core/Src/main.c:719:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'binarySearch':
+../Core/Src/main.c:652:1: warning: control reaches end of non-void function [-Wreturn-type]
+  652 | }
+      | ^
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab3/Ejercicio_2/Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d" -MT"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o"
+arm-none-eabi-gcc -u _printf_float -o "Ejercicio_2_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab3\Ejercicio_2\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ejercicio_2_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Ejercicio_2_CM7.elf
+ 
+arm-none-eabi-size   Ejercicio_2_CM7.elf 
+arm-none-eabi-objdump -h -S  Ejercicio_2_CM7.elf  > "Ejercicio_2_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  44340	    488	   4872	  49700	   c224	Ejercicio_2_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ejercicio_2_CM7.list
+ 
+18:36:26 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_2_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44340	    488	   4872	  49700	   c224	Ejercicio_2_CM7.elf
+Finished building: default.size.stdout
+ 
+18:39:41 **** Incremental Build of configuration Debug for project Ejercicio_2_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_2_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Ejercicio_2_CM4.elf
+Finished building: default.size.stdout
+ 
+18:39:41 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:9: warning: built-in function 'index' declared as non-function [-Wbuiltin-declaration-mismatch]
+   78 | int16_t index;
+      |         ^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:185:18: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  185 |   uart_buf_len = sprintf(uart_buf, "MPU6050 Temp test\r\n");
+      |                  ^~~~~~~
+../Core/Src/main.c:185:18: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:186:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  186 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                              ^~~~~~~~~
+      |                              |
+      |                              char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:196:3: warning: implicit declaration of function 'lcd_init' [-Wimplicit-function-declaration]
+  196 |   lcd_init();
+      |   ^~~~~~~~
+../Core/Src/main.c:210:7: warning: implicit declaration of function 'lcd_clear' [-Wimplicit-function-declaration]
+  210 |       lcd_clear();
+      |       ^~~~~~~~~
+../Core/Src/main.c:211:7: warning: implicit declaration of function 'lcd_put_cur' [-Wimplicit-function-declaration]
+  211 |       lcd_put_cur(0, 0);
+      |       ^~~~~~~~~~~
+../Core/Src/main.c:212:7: warning: implicit declaration of function 'lcd_send_string' [-Wimplicit-function-declaration]
+  212 |       lcd_send_string("Selection Sort:");
+      |       ^~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:576:17: warning: incompatible implicit declaration of built-in function 'sprintf'
+  576 |   lcd_buf_len = sprintf(lcd_buf, "[%u] %.2f C", count, temp);
+      |                 ^~~~~~~
+../Core/Src/main.c:576:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:580:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  580 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                              ^~~~~~~~~
+      |                              |
+      |                              char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'algorithms':
+../Core/Src/main.c:656:18: warning: incompatible implicit declaration of built-in function 'sprintf'
+  656 |   uart_buf_len = sprintf(uart_buf, "Muestra: %u\r\n", i);
+      |                  ^~~~~~~
+../Core/Src/main.c:656:18: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'displayLoop':
+../Core/Src/main.c:719:17: warning: incompatible implicit declaration of built-in function 'sprintf'
+  719 |  uart_buf_len = sprintf(uart_buf, "Selection Sort: %.2f useg \r\n", promSelSort);
+      |                 ^~~~~~~
+../Core/Src/main.c:719:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'binarySearch':
+../Core/Src/main.c:652:1: warning: control reaches end of non-void function [-Wreturn-type]
+  652 | }
+      | ^
+arm-none-eabi-gcc -u _printf_float -o "Ejercicio_2_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab3\Ejercicio_2\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ejercicio_2_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Ejercicio_2_CM7.elf
+ 
+arm-none-eabi-size   Ejercicio_2_CM7.elf 
+arm-none-eabi-objdump -h -S  Ejercicio_2_CM7.elf  > "Ejercicio_2_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  44388	    488	   4872	  49748	   c254	Ejercicio_2_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ejercicio_2_CM7.list
+ 
+18:39:47 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_2_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44388	    488	   4872	  49748	   c254	Ejercicio_2_CM7.elf
+Finished building: default.size.stdout
+ 
+18:43:17 **** Incremental Build of configuration Debug for project Ejercicio_2_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_2_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Ejercicio_2_CM4.elf
+Finished building: default.size.stdout
+ 
+18:43:17 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_2_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44388	    488	   4872	  49748	   c254	Ejercicio_2_CM7.elf
+Finished building: default.size.stdout
+ 
+18:43:19 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_2_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44388	    488	   4872	  49748	   c254	Ejercicio_2_CM7.elf
+Finished building: default.size.stdout
+ 
+18:47:02 **** Incremental Build of configuration Debug for project Ejercicio_2_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_2_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Ejercicio_2_CM4.elf
+Finished building: default.size.stdout
+ 
+18:47:02 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:9: warning: built-in function 'index' declared as non-function [-Wbuiltin-declaration-mismatch]
+   78 | int16_t index;
+      |         ^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:185:18: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  185 |   uart_buf_len = sprintf(uart_buf, "MPU6050 Temp test\r\n");
+      |                  ^~~~~~~
+../Core/Src/main.c:185:18: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:186:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  186 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                              ^~~~~~~~~
+      |                              |
+      |                              char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:196:3: warning: implicit declaration of function 'lcd_init' [-Wimplicit-function-declaration]
+  196 |   lcd_init();
+      |   ^~~~~~~~
+../Core/Src/main.c:210:7: warning: implicit declaration of function 'lcd_clear' [-Wimplicit-function-declaration]
+  210 |       lcd_clear();
+      |       ^~~~~~~~~
+../Core/Src/main.c:211:7: warning: implicit declaration of function 'lcd_put_cur' [-Wimplicit-function-declaration]
+  211 |       lcd_put_cur(0, 0);
+      |       ^~~~~~~~~~~
+../Core/Src/main.c:212:7: warning: implicit declaration of function 'lcd_send_string' [-Wimplicit-function-declaration]
+  212 |       lcd_send_string("Selection Sort:");
+      |       ^~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:576:17: warning: incompatible implicit declaration of built-in function 'sprintf'
+  576 |   lcd_buf_len = sprintf(lcd_buf, "[%u] %.2f C", count, temp);
+      |                 ^~~~~~~
+../Core/Src/main.c:576:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:580:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  580 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                              ^~~~~~~~~
+      |                              |
+      |                              char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'algorithms':
+../Core/Src/main.c:656:18: warning: incompatible implicit declaration of built-in function 'sprintf'
+  656 |   uart_buf_len = sprintf(uart_buf, "Muestra: %u\r\n", i);
+      |                  ^~~~~~~
+../Core/Src/main.c:656:18: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'displayLoop':
+../Core/Src/main.c:719:17: warning: incompatible implicit declaration of built-in function 'sprintf'
+  719 |  uart_buf_len = sprintf(uart_buf, "Selection Sort: %.2f useg \r\n", promSelSort);
+      |                 ^~~~~~~
+../Core/Src/main.c:719:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'binarySearch':
+../Core/Src/main.c:652:1: warning: control reaches end of non-void function [-Wreturn-type]
+  652 | }
+      | ^
+arm-none-eabi-gcc -u _printf_float -o "Ejercicio_2_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab3\Ejercicio_2\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ejercicio_2_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Ejercicio_2_CM7.elf
+ 
+arm-none-eabi-size   Ejercicio_2_CM7.elf 
+arm-none-eabi-objdump -h -S  Ejercicio_2_CM7.elf  > "Ejercicio_2_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  44388	    488	   4872	  49748	   c254	Ejercicio_2_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ejercicio_2_CM7.list
+ 
+18:47:05 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_2_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44388	    488	   4872	  49748	   c254	Ejercicio_2_CM7.elf
+Finished building: default.size.stdout
+ 
+18:47:36 **** Incremental Build of configuration Debug for project Ejercicio_2_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_2_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Ejercicio_2_CM4.elf
+Finished building: default.size.stdout
+ 
+18:47:36 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:9: warning: built-in function 'index' declared as non-function [-Wbuiltin-declaration-mismatch]
+   78 | int16_t index;
+      |         ^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:185:18: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  185 |   uart_buf_len = sprintf(uart_buf, "MPU6050 Temp test\r\n");
+      |                  ^~~~~~~
+../Core/Src/main.c:185:18: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:186:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  186 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                              ^~~~~~~~~
+      |                              |
+      |                              char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:196:3: warning: implicit declaration of function 'lcd_init' [-Wimplicit-function-declaration]
+  196 |   lcd_init();
+      |   ^~~~~~~~
+../Core/Src/main.c:210:7: warning: implicit declaration of function 'lcd_clear' [-Wimplicit-function-declaration]
+  210 |       lcd_clear();
+      |       ^~~~~~~~~
+../Core/Src/main.c:211:7: warning: implicit declaration of function 'lcd_put_cur' [-Wimplicit-function-declaration]
+  211 |       lcd_put_cur(0, 0);
+      |       ^~~~~~~~~~~
+../Core/Src/main.c:212:7: warning: implicit declaration of function 'lcd_send_string' [-Wimplicit-function-declaration]
+  212 |       lcd_send_string("Selection Sort:");
+      |       ^~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:576:17: warning: incompatible implicit declaration of built-in function 'sprintf'
+  576 |   lcd_buf_len = sprintf(lcd_buf, "[%u] %.2f C", count, temp);
+      |                 ^~~~~~~
+../Core/Src/main.c:576:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:580:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  580 |   HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+      |                              ^~~~~~~~~
+      |                              |
+      |                              char (*)[50]
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[50]'
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'algorithms':
+../Core/Src/main.c:656:18: warning: incompatible implicit declaration of built-in function 'sprintf'
+  656 |   uart_buf_len = sprintf(uart_buf, "Muestra: %u\r\n", i);
+      |                  ^~~~~~~
+../Core/Src/main.c:656:18: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'displayLoop':
+../Core/Src/main.c:719:17: warning: incompatible implicit declaration of built-in function 'sprintf'
+  719 |  uart_buf_len = sprintf(uart_buf, "Selection Sort: %.2f useg \r\n", promSelSort);
+      |                 ^~~~~~~
+../Core/Src/main.c:719:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'binarySearch':
+../Core/Src/main.c:652:1: warning: control reaches end of non-void function [-Wreturn-type]
+  652 | }
+      | ^
+arm-none-eabi-gcc -u _printf_float -o "Ejercicio_2_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab3\Ejercicio_2\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ejercicio_2_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Ejercicio_2_CM7.elf
+ 
+arm-none-eabi-size   Ejercicio_2_CM7.elf 
+arm-none-eabi-objdump -h -S  Ejercicio_2_CM7.elf  > "Ejercicio_2_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  44388	    488	   4872	  49748	   c254	Ejercicio_2_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ejercicio_2_CM7.list
+ 
+18:47:38 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_2_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44388	    488	   4872	  49748	   c254	Ejercicio_2_CM7.elf
+Finished building: default.size.stdout
+ 
+19:06:52 **** Incremental Build of configuration Debug for project Ejercicio_1_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:156:21: warning: passing argument 1 of 'lcd_send_string' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  156 |     lcd_send_string(clear);
+      |                     ^~~~~
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/i2c-lcd.h:9:29: note: expected 'char *' but argument is of type 'const char *'
+    9 | void lcd_send_string (char *str);  // send string to the lcd
+      |                       ~~~~~~^~~
+../Core/Src/main.c:158:21: warning: passing argument 1 of 'lcd_send_string' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  158 |     lcd_send_string(memo);
+      |                     ^~~~
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/i2c-lcd.h:9:29: note: expected 'char *' but argument is of type 'const char *'
+    9 | void lcd_send_string (char *str);  // send string to the lcd
+      |                       ~~~~~~^~~
+../Core/Src/main.c:160:21: warning: passing argument 1 of 'lcd_send_string' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  160 |     lcd_send_string(clear);
+      |                     ^~~~~
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/i2c-lcd.h:9:29: note: expected 'char *' but argument is of type 'const char *'
+    9 | void lcd_send_string (char *str);  // send string to the lcd
+      |                       ~~~~~~^~~
+../Core/Src/main.c:162:21: warning: passing argument 1 of 'lcd_send_string' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  162 |     lcd_send_string(genis);
+      |                     ^~~~~
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/i2c-lcd.h:9:29: note: expected 'char *' but argument is of type 'const char *'
+    9 | void lcd_send_string (char *str);  // send string to the lcd
+      |                       ~~~~~~^~~
+../Core/Src/main.c:164:21: warning: passing argument 1 of 'lcd_send_string' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  164 |     lcd_send_string(clear);
+      |                     ^~~~~
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/i2c-lcd.h:9:29: note: expected 'char *' but argument is of type 'const char *'
+    9 | void lcd_send_string (char *str);  // send string to the lcd
+      |                       ~~~~~~^~~
+../Core/Src/main.c:166:21: warning: passing argument 1 of 'lcd_send_string' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  166 |     lcd_send_string(poncho);
+      |                     ^~~~~~
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/i2c-lcd.h:9:29: note: expected 'char *' but argument is of type 'const char *'
+    9 | void lcd_send_string (char *str);  // send string to the lcd
+      |                       ~~~~~~^~~
+arm-none-eabi-gcc -o "Ejercicio_1_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab3\Ejercicio_1\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ejercicio_1_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Ejercicio_1_CM7.elf
+ 
+arm-none-eabi-size   Ejercicio_1_CM7.elf 
+arm-none-eabi-objdump -h -S  Ejercicio_1_CM7.elf  > "Ejercicio_1_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  17116	     24	   1720	  18860	   49ac	Ejercicio_1_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ejercicio_1_CM7.list
+ 
+19:06:59 **** Incremental Build of configuration Debug for project Ejercicio_1_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_1_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17116	     24	   1720	  18860	   49ac	Ejercicio_1_CM7.elf
+Finished building: default.size.stdout
+ 
