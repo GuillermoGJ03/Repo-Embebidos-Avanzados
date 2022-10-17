@@ -58,10 +58,15 @@ I2C_HandleTypeDef hi2c4;
 
 TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim2;
+TIM_HandleTypeDef htim5;
 
 UART_HandleTypeDef huart3;
 
 /* USER CODE BEGIN PV */
+// Duty Cycle del motor
+int16_t dutyCycle = 40;
+
+// Lectura del MPU6050
 uint8_t check, data;
 
 int16_t acc_X_read = 0;
@@ -73,16 +78,22 @@ int16_t gyr_Z_read = 0;
 
 float acc_X, acc_Y, acc_Z, gyr_X, gyr_Y, gyr_Z;
 
+// Variables para el muestreo
+int16_t limite_muestras = 32;
 int16_t n_muestras = 0;
-float muestras_x[1024];
-float muestras_y[1024];
-float muestras_z[1024];
+float muestras40_x[32],  muestras40_y[32], muestras40_z[32];
+float muestras60_x[32],  muestras60_y[32], muestras60_z[32];
+float muestras80_x[32],  muestras80_y[32], muestras80_z[32];
 
 
 HAL_StatusTypeDef status;
 
+// Variables UART
 char uart_buf[50];
 uint16_t uart_buf_len;
+
+// Variables de conprobación de tiempo
+unsigned timer_val;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -92,8 +103,11 @@ static void MX_USART3_UART_Init(void);
 static void MX_I2C4_Init(void);
 static void MX_TIM2_Init(void);
 static void MX_TIM1_Init(void);
+static void MX_TIM5_Init(void);
 /* USER CODE BEGIN PFP */
-
+void MPU6050_init(void);
+void MPU6050_read_gyro(void);
+void changeCycle(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -162,7 +176,17 @@ Error_Handler();
   MX_I2C4_Init();
   MX_TIM2_Init();
   MX_TIM1_Init();
+  MX_TIM5_Init();
   /* USER CODE BEGIN 2 */
+  // Incialización del timer 5
+  HAL_TIM_Base_Start(&htim5);
+
+  // Inicialización del PWM
+  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_0, SET);
+  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_1, RESET);
+  HAL_TIM_PWM_Init(&htim1);
+  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+  TIM1->CCR1 = 100;
 
   // Revisión de conexión del MPU6050
   HAL_StatusTypeDef status;
@@ -177,14 +201,6 @@ Error_Handler();
 
   // Inicialización del MPU6050
   MPU6050_init();
-
-  // Inicialización del PWM
-  HAL_TIM_PWM_Init(&htim1);
-  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-  TIM1->CCR1 = 40;
-  int cond = 1;
-  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_0, SET);
-  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_1, RESET);
 
   // Inicialización de la interrupción por timer
   HAL_TIM_Base_Start_IT(&htim2);
@@ -408,9 +424,9 @@ static void MX_TIM2_Init(void)
 
   /* USER CODE END TIM2_Init 1 */
   htim2.Instance = TIM2;
-  htim2.Init.Prescaler = 58592;
+  htim2.Init.Prescaler = 239;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 64;
+  htim2.Init.Period = 31249;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
@@ -431,6 +447,51 @@ static void MX_TIM2_Init(void)
   /* USER CODE BEGIN TIM2_Init 2 */
 
   /* USER CODE END TIM2_Init 2 */
+
+}
+
+/**
+  * @brief TIM5 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM5_Init(void)
+{
+
+  /* USER CODE BEGIN TIM5_Init 0 */
+
+  /* USER CODE END TIM5_Init 0 */
+
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+
+  /* USER CODE BEGIN TIM5_Init 1 */
+
+  /* USER CODE END TIM5_Init 1 */
+  htim5.Instance = TIM5;
+  htim5.Init.Prescaler = 240;
+  htim5.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim5.Init.Period = 4294967295;
+  htim5.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim5.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim5) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim5, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim5, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM5_Init 2 */
+
+  /* USER CODE END TIM5_Init 2 */
 
 }
 
@@ -556,9 +617,12 @@ void MPU6050_read_gyro(void){
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	if (htim == &htim2)
 	{
+		if(n_muestras == 0) timer_val = __HAL_TIM_GET_COUNTER(&htim5);
 		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_14);
 		MPU6050_read_gyro();
 
+		uart_buf_len = sprintf(uart_buf, "\r\n Muestra: %u \r\n", n_muestras);
+		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
 		uart_buf_len = sprintf(uart_buf, "GyrX = %.5f °/s \r\n", gyr_X);
 		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
 		uart_buf_len = sprintf(uart_buf, "GyrY = %.5f °/s \r\n", gyr_Y);
@@ -566,15 +630,120 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 		uart_buf_len = sprintf(uart_buf, "GyrZ = %.5f °/s \r\n\n", gyr_Z);
 		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
 
-		n_muestras++;
-		if(n_muestras == 128){
-			uart_buf_len = sprintf(uart_buf, "Muestras: %u", n_muestras);
-			HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
-			HAL_TIM_Base_Stop_IT(&htim2);
+		// Guardado de muestras en los arreglos
+		if(dutyCycle == 40){
+			muestras40_x[n_muestras] = gyr_X;
+			muestras40_y[n_muestras] = gyr_Y;
+			muestras40_z[n_muestras] = gyr_Z;
+		} else if(dutyCycle == 60){
+			muestras60_x[n_muestras] = gyr_X;
+			muestras60_y[n_muestras] = gyr_Y;
+			muestras60_z[n_muestras] = gyr_Z;
+		} else if(dutyCycle == 80){
+			muestras80_x[n_muestras] = gyr_X;
+			muestras80_y[n_muestras] = gyr_Y;
+			muestras80_z[n_muestras] = gyr_Z;
 		}
 
+		n_muestras++;
+		if(n_muestras == limite_muestras){
+			uart_buf_len = sprintf(uart_buf, "Muestras: %u \r\n", n_muestras);
+			HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+			HAL_TIM_Base_Stop_IT(&htim2);
+
+			// Comprobación del tiempo de muestreo
+			timer_val = __HAL_TIM_GET_COUNTER(&htim5) - timer_val;
+			uart_buf_len = sprintf(uart_buf, "Tiempo transcurrido: %u us\r\n", timer_val);
+			HAL_UART_Transmit(&huart3, (uint8_t *)uart_buf, uart_buf_len, 100);
+
+			changeCycle();
+		}
 	}
 }
+
+void changeCycle(void){
+	TIM1->CCR1 = 0;
+	n_muestras = 0;
+
+	if(dutyCycle == 40){
+		dutyCycle = 60;
+		TIM1->CCR1 = 80;
+
+		uart_buf_len = sprintf(uart_buf, "DUTY CYCLE: 40%");
+		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		uart_buf_len = sprintf(uart_buf, "\r\n Eje X: ");
+		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		for (int i = 0; i < limite_muestras; i++){
+			uart_buf_len = sprintf(uart_buf, "%.2f, ", muestras40_x[i]);
+			HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		}
+		uart_buf_len = sprintf(uart_buf, "\r\n Eje Y: ");
+		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		for (int i = 0; i < limite_muestras; i++){
+			uart_buf_len = sprintf(uart_buf, "%.2f, ", muestras40_y[i]);
+			HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		}
+		uart_buf_len = sprintf(uart_buf, "\r\n Eje Z: ");
+		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		for (int i = 0; i < limite_muestras; i++){
+			uart_buf_len = sprintf(uart_buf, "%.2f, ", muestras40_z[i]);
+			HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		}
+
+		HAL_TIM_Base_Start_IT(&htim2);
+	} else if(dutyCycle == 60){
+		dutyCycle = 80;
+		TIM1->CCR1 = 100;
+
+		uart_buf_len = sprintf(uart_buf, "DUTY CYCLE: 60%");
+		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		uart_buf_len = sprintf(uart_buf, "\r\n Eje X: ");
+		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		for (int i = 0; i < limite_muestras; i++){
+			uart_buf_len = sprintf(uart_buf, "%.2f, ", muestras60_x[i]);
+			HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		}
+		uart_buf_len = sprintf(uart_buf, "\r\n Eje Y: ");
+		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		for (int i = 0; i < limite_muestras; i++){
+			uart_buf_len = sprintf(uart_buf, "%.2f, ", muestras60_y[i]);
+			HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		}
+		uart_buf_len = sprintf(uart_buf, "\r\n Eje Z: ");
+		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		for (int i = 0; i < limite_muestras; i++){
+			uart_buf_len = sprintf(uart_buf, "%.2f, ", muestras60_z[i]);
+			HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		}
+
+		HAL_TIM_Base_Start_IT(&htim2);
+	} else if(dutyCycle == 80){
+		uart_buf_len = sprintf(uart_buf, "DUTY CYCLE: 80%");
+		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		uart_buf_len = sprintf(uart_buf, "\r\n Eje X: ");
+		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		for (int i = 0; i < limite_muestras; i++){
+			uart_buf_len = sprintf(uart_buf, "%.2f, ", muestras80_x[i]);
+			HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		}
+		uart_buf_len = sprintf(uart_buf, "\r\n Eje Y: ");
+		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		for (int i = 0; i < limite_muestras; i++){
+			uart_buf_len = sprintf(uart_buf, "%.2f, ", muestras80_y[i]);
+			HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		}
+		uart_buf_len = sprintf(uart_buf, "\r\n Eje Z: ");
+		HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		for (int i = 0; i < limite_muestras; i++){
+			uart_buf_len = sprintf(uart_buf, "%.2f, ", muestras80_z[i]);
+			HAL_UART_Transmit(&huart3, &uart_buf, uart_buf_len, 100);
+		}
+		TIM1->CCR1 = 0;
+		dutyCycle = 0;
+		HAL_TIM_Base_Stop_IT(&htim2);
+	}
+}
+
 /* USER CODE END 4 */
 
 /**
