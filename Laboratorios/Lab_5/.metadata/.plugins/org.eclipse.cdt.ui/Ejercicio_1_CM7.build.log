@@ -1,0 +1,17 @@
+18:33:11 **** Incremental Build of configuration Debug for project Ejercicio_1_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -u _printf_float -o "Ejercicio_1_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab5\Ejercicio_1\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ejercicio_1_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Ejercicio_1_CM7.elf
+ 
+arm-none-eabi-size   Ejercicio_1_CM7.elf 
+arm-none-eabi-objdump -h -S  Ejercicio_1_CM7.elf  > "Ejercicio_1_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  69164	    496	   2872	  72532	  11b54	Ejercicio_1_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ejercicio_1_CM7.list
+ 
+
+18:33:12 Build Finished. 0 errors, 0 warnings. (took 1s.175ms)
+
