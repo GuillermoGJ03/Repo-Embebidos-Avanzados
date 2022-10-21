@@ -63,6 +63,7 @@ TIM_HandleTypeDef htim5;
 UART_HandleTypeDef huart3;
 
 /* USER CODE BEGIN PV */
+// Definción de variables complejas para la FFT 
 typedef float complex cplx;
 cplx xFFT[64];
 
@@ -678,7 +679,21 @@ void printUART_array(float *arr, int size){
 }
 void printUART_arrayCplx(cplx *arr, int size){
 	for(int i = 0; i < size; i++){
-		uart_buf_len = sprintf(uart_buf, "%.5f + j%.5f, ", creal(arr[i]), cimag(arr[i]));
+		uart_buf_len = sprintf(uart_buf, "%.5f + %.5fj, ", creal(arr[i]), cimag(arr[i]));
+		HAL_UART_Transmit(&huart3, (uint8_t *)uart_buf, uart_buf_len, 100);
+	}
+
+	printUART_int("\r\n", 0);
+	printUART_int("Real: ", 0);
+	for(int o = 0; o < size; o++){
+		uart_buf_len = sprintf(uart_buf, "%.5f, ", creal(arr[o]));
+		HAL_UART_Transmit(&huart3, (uint8_t *)uart_buf, uart_buf_len, 100);
+	}
+
+	printUART_int("\r\n", 0);
+	printUART_int("Imag: ", 0);
+	for(int o = 0; o < size; o++){
+		uart_buf_len = sprintf(uart_buf, "%.5f, ", cimag(arr[o]));
 		HAL_UART_Transmit(&huart3, (uint8_t *)uart_buf, uart_buf_len, 100);
 	}
 	printUART_int("\r\n", 0);

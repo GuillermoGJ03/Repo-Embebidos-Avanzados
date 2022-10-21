@@ -3212,7 +3212,7 @@ void printUART_arrayCplx(cplx *arr, int size){
  8001c76:	2300      	movs	r3, #0
  8001c78:	60fb      	str	r3, [r7, #12]
  8001c7a:	e027      	b.n	8001ccc <printUART_arrayCplx+0x60>
-		uart_buf_len = sprintf(uart_buf, "%.5f + j%.5f, ", creal(arr[i]), cimag(arr[i]));
+		uart_buf_len = sprintf(uart_buf, "%.5f + %.5fj, ", creal(arr[i]), cimag(arr[i]));
  8001c7c:	68fb      	ldr	r3, [r7, #12]
  8001c7e:	00db      	lsls	r3, r3, #3
  8001c80:	687a      	ldr	r2, [r7, #4]

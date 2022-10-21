@@ -694,7 +694,7 @@ void printUART_array(float *arr, int size){
 }
 void printUART_arrayCplx(cplx *arr, int size){
 	for(int i = 0; i < size; i++){
-		uart_buf_len = sprintf(uart_buf, "%.5f + j%.5f, ", creal(arr[i]), cimag(arr[i]));
+		uart_buf_len = sprintf(uart_buf, "%.5f + %.5fj, ", creal(arr[i]), cimag(arr[i]));
 		HAL_UART_Transmit(&huart3, (uint8_t *)uart_buf, uart_buf_len, 100);
 	}
 	printUART_int("\r\n", 0);
