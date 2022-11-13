@@ -1,0 +1,36 @@
+#include "stm32h7xx_hal.h"
+#include "mprls.h"
+
+#define MPRLS_ADDR 0x18
+
+double press_counts = 0; // digital pressure reading [counts]
+double temp_counts = 0; // digital temperature reading [counts]
+double pressure = 0; // pressure reading [bar, psi, kPa, etc.]
+double temperature = 0; // temperature reading in deg C
+double outputmax = 15099494; // output at maximum pressure [counts]
+double outputmin = 1677722; // output at minimum pressure [counts]
+double pmax = 1; // maximum value of pressure range [bar, psi, kPa, etc.]
+double pmin = 0; // minimum value of pressure range [bar, psi, kPa, etc.
+
+uint8_t data[4];
+float press, press_counts;
+
+void MPRLS_status(I2C_HandleTypeDef *hi2c){
+	HAL_StatusTypeDef status;
+	status = HAL_I2C_IsDeviceReady(hi2c, MPRLS_ADDR<<1, 1, 3000);
+	if (status == HAL_OK) HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, SET);
+}
+
+void MPRLS_init(I2C_HandleTypeDef *hi2c){
+	uint8_t cmd[3] = {0xAA, 0x00, 0x00}; // Comando a enviar
+	HAL_I2C_Master_Transmit(hi2c, MPRLS_ADDR<<1, cmd, 3, 3000);
+
+}
+
+float MPRLS_read(I2C_HandleTypeDef *hi2c){
+	HAL_I2C_Master_Receive(hi2c, (MPRLS_ADDDR<<1)|0b00000001, data, 4, 3000);
+	press_counts = data[3] + data[2] * 256 + data[1] * 65536;
+	press = ((press_counts - outputmin) * (pmax - pmin)) / (outputmax - outputmin) + pmin;
+
+	return press;
+}

@@ -1,0 +1,10 @@
+18:53:05 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53804	    500	   2132	  56436	   dc74	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+
+18:53:05 Build Finished. 0 errors, 0 warnings. (took 305ms)
+
