@@ -1,0 +1,5 @@
+#include "stm32h7xx_hal.h"
+
+void MPU6050_init(void);
+
+void MPU6050_read_gyro(void);

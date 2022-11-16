@@ -1,0 +1,1840 @@
+17:06:14 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  50556	    124	   3556	  54236	   d3dc	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+17:06:21 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  50556	    124	   3556	  54236	   d3dc	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+17:07:11 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  50556	    124	   3556	  54236	   d3dc	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+17:07:58 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  50556	    124	   3556	  54236	   d3dc	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+17:08:07 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  50556	    124	   3556	  54236	   d3dc	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+17:10:19 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  50556	    124	   3556	  54236	   d3dc	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+17:11:49 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_2_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  64252	    492	   2380	  67124	  10634	Ejercicio_2_CM7.elf
+Finished building: default.size.stdout
+ 
+17:11:49 **** Incremental Build of configuration Debug for project lab6_4_CM4 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3184	     24	   1568	   4776	   12a8	lab6_4_CM4.elf
+Finished building: default.size.stdout
+ 
+17:11:50 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53080	    124	   3556	  56760	   ddb8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+17:12:00 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53080	    124	   3556	  56760	   ddb8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+17:13:39 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53080	    124	   3556	  56760	   ddb8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+17:14:21 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53080	    124	   3556	  56760	   ddb8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+17:29:52 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53080	    124	   3556	  56760	   ddb8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+18:11:21 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53080	    124	   3556	  56760	   ddb8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+18:16:09 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53080	    124	   3556	  56760	   ddb8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+18:21:22 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_2_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  64252	    492	   2380	  67124	  10634	Ejercicio_2_CM7.elf
+Finished building: default.size.stdout
+ 
+18:21:23 **** Incremental Build of configuration Debug for project lab6_4_CM4 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3184	     24	   1568	   4776	   12a8	lab6_4_CM4.elf
+Finished building: default.size.stdout
+ 
+18:21:23 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:646:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  646 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53080	    124	   3556	  56760	   ddb8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+18:21:26 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53080	    124	   3556	  56760	   ddb8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+18:23:40 **** Incremental Build of configuration Debug for project Ejercicio_2_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Ejercicio_2_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  64252	    492	   2380	  67124	  10634	Ejercicio_2_CM7.elf
+Finished building: default.size.stdout
+ 
+18:23:41 **** Incremental Build of configuration Debug for project lab6_4_CM4 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3184	     24	   1568	   4776	   12a8	lab6_4_CM4.elf
+Finished building: default.size.stdout
+ 
+18:23:41 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:166:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:646:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  646 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53088	    124	   3548	  56760	   ddb8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+18:24:03 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53088	    124	   3548	  56760	   ddb8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+18:29:12 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:166:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:646:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  646 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53088	    124	   3548	  56760	   ddb8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+11:31:10 **** Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:74:1: error: unknown type name 'uint_8'; did you mean 'uint'?
+   74 | uint_8 rpmMSB, rpmLSB;
+      | ^~~~~~
+      | uint
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:167:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  167 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:639:27: error: invalid type argument of unary '*' (have 'double')
+  639 |   rpm = (60000000.0/(11.0**34.0*time));
+      |                           ^~~~~
+../Core/Src/main.c:647:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  647 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+make: *** [Core/Src/subdir.mk:31: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+11:31:57 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:166:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:646:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  646 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53088	    124	   3548	  56760	   ddb8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+11:32:08 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53088	    124	   3548	  56760	   ddb8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+11:33:14 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53088	    124	   3548	  56760	   ddb8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+11:33:28 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53088	    124	   3548	  56760	   ddb8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+11:35:38 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:165:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  165 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:166:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:646:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  646 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53080	    124	   3596	  56800	   dde0	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+11:35:45 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53080	    124	   3596	  56800	   dde0	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+11:38:12 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:165:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  165 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:166:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:646:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  646 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53072	    124	   3596	  56792	   ddd8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+11:38:16 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53072	    124	   3596	  56792	   ddd8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+11:39:20 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:165:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  165 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:166:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:646:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  646 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53080	    124	   3596	  56800	   dde0	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+11:39:24 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53080	    124	   3596	  56800	   dde0	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+11:41:49 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:165:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  165 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:166:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:646:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  646 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53080	    124	   3596	  56800	   dde0	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+11:41:53 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53080	    124	   3596	  56800	   dde0	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+11:52:20 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:165:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  165 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:166:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:646:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  646 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53080	    124	   3596	  56800	   dde0	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+11:52:25 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53080	    124	   3596	  56800	   dde0	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+12:13:05 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:165:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  165 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:166:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:646:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  646 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53080	    124	   3596	  56800	   dde0	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+12:21:47 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:165:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  165 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:166:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:646:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  646 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53080	    124	   3596	  56800	   dde0	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+18:28:03 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:169:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  169 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:170:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  170 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:661:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  661 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53244	    140	   3612	  56996	   dea4	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+18:28:17 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53244	    140	   3612	  56996	   dea4	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+18:31:46 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:169:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  169 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:170:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  170 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:661:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  661 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53244	    140	   3612	  56996	   dea4	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+18:31:49 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53244	    140	   3612	  56996	   dea4	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+18:32:29 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:169:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  169 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:170:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  170 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:653:123: error: expected ';' before 'uart_buf_len'
+  653 |   TIM1->CCR2 = (int) (2.05 + 11.5*ts*(1/(adcValues[0] - 1)) + 0.0907*(1/ts)*((adcValues[0] - 1)/adcValues[0]))/275.0*100.0
+      |                                                                                                                           ^
+      |                                                                                                                           ;
+......
+  657 |   uart_buf_len = 4;
+      |   ~~~~~~~~~~~~                                                                                                             
+../Core/Src/main.c:662:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  662 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+make: *** [Core/Src/subdir.mk:31: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+18:32:36 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:169:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  169 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:170:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  170 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:653:123: error: expected ';' before 'uart_buf_len'
+  653 |   TIM1->CCR2 = (int) (2.05 + 11.5*ts*(1/(adcValues[0] - 1)) + 0.0907*(1/ts)*((adcValues[0] - 1)/adcValues[0]))/275.0*100.0
+      |                                                                                                                           ^
+      |                                                                                                                           ;
+......
+  657 |   uart_buf_len = 4;
+      |   ~~~~~~~~~~~~                                                                                                             
+../Core/Src/main.c:662:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  662 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+make: *** [Core/Src/subdir.mk:31: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+18:33:21 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:169:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  169 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:170:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  170 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:662:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  662 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53212	    128	   3600	  56940	   de6c	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+18:33:24 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53212	    128	   3600	  56940	   de6c	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+18:34:12 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:169:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  169 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:170:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  170 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:662:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  662 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53244	    140	   3612	  56996	   dea4	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+18:34:15 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53244	    140	   3612	  56996	   dea4	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+18:43:46 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:169:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  169 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:170:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  170 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:662:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  662 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53192	    136	   3608	  56936	   de68	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+18:43:50 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53192	    136	   3608	  56936	   de68	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+18:45:33 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:169:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  169 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:170:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  170 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:648:39: error: 'errorPrev' undeclared (first use in this function)
+  648 |   control = kp*error + ki*ts*(error + errorPrev) + (kd/ts)*(error - error);
+      |                                       ^~~~~~~~~
+../Core/Src/main.c:648:39: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:662:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  662 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+make: *** [Core/Src/subdir.mk:31: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+18:45:51 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:169:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  169 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:170:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  170 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:662:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  662 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53244	    140	   3612	  56996	   dea4	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+18:45:55 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53244	    140	   3612	  56996	   dea4	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+18:46:35 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:169:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  169 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:170:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  170 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:662:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  662 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53244	    140	   3612	  56996	   dea4	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+15:15:56 **** Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_adc.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_adc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_adc.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_adc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_adc_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_adc_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pcd.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pcd.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pcd.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pcd_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pcd_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pcd_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_usb.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_usb.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_usb.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_hal_msp.d" -MT"Core/Src/stm32h7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_it.d" -MT"Core/Src/stm32h7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_it.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d" -MT"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:175:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  175 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:176:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  176 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:721:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  721 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53548	    140	   3692	  57380	   e024	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+15:17:19 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:175:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  175 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:176:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  176 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:721:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  721 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53548	    140	   3692	  57380	   e024	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+15:45:41 **** Clean-only build of configuration Debug for project lab6_4_CM4 ****
+make -j8 clean 
+rm -rf ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.su
+rm -rf ./Core/Startup/startup_stm32h745zitx.d ./Core/Startup/startup_stm32h745zitx.o
+rm -rf ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32h7xx_hal_msp.d ./Core/Src/stm32h7xx_hal_msp.o ./Core/Src/stm32h7xx_hal_msp.su ./Core/Src/stm32h7xx_it.d ./Core/Src/stm32h7xx_it.o ./Core/Src/stm32h7xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su
+rm -rf ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.su
+rm -rf default.size.stdout lab6_4_CM4.elf lab6_4_CM4.list lab6_4_CM4.map
+ 
+15:45:42 **** Build of configuration Debug for project lab6_4_CM4 ****
+make -j8 all 
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32h745zitx.d" -MT"Core/Startup/startup_stm32h745zitx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32h745zitx.o" "../Core/Startup/startup_stm32h745zitx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_hal_msp.d" -MT"Core/Src/stm32h7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_it.d" -MT"Core/Src/stm32h7xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Lab_6/lab6_4/Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d" -MT"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o"
+arm-none-eabi-gcc -o "lab6_4_CM4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM4\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM4.elf
+ 
+arm-none-eabi-size   lab6_4_CM4.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM4.elf  > "lab6_4_CM4.list"
+   text	   data	    bss	    dec	    hex	filename
+   3184	     24	   1568	   4776	   12a8	lab6_4_CM4.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM4.list
+ 
+15:45:45 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:175:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  175 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:176:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  176 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:701:53: error: 'kd' undeclared (first use in this function); did you mean 'ki'?
+  701 |   control = kp*error + ki*ts*(error + errorPrev) + (kd/ts)*(error - errorPrev);
+      |                                                     ^~
+      |                                                     ki
+../Core/Src/main.c:701:53: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:721:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  721 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+make: *** [Core/Src/subdir.mk:31: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:45:47 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:175:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  175 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:176:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  176 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:701:53: error: 'kd' undeclared (first use in this function); did you mean 'ki'?
+  701 |   control = kp*error + ki*ts*(error + errorPrev) + (kd/ts)*(error - errorPrev);
+      |                                                     ^~
+      |                                                     ki
+../Core/Src/main.c:701:53: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:721:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  721 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+make: *** [Core/Src/subdir.mk:31: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:45:59 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:175:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  175 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:176:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  176 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:721:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  721 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53504	    136	   3688	  57328	   dff0	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+16:06:31 **** Incremental Build of configuration Debug for project lab6_4_CM4 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3184	     24	   1568	   4776	   12a8	lab6_4_CM4.elf
+Finished building: default.size.stdout
+ 
+16:06:31 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  177 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:178:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  178 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:726:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  726 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53532	    136	   3696	  57364	   e014	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+16:06:34 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53532	    136	   3696	  57364	   e014	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+16:07:56 **** Incremental Build of configuration Debug for project lab6_4_CM4 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3184	     24	   1568	   4776	   12a8	lab6_4_CM4.elf
+Finished building: default.size.stdout
+ 
+16:07:56 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  177 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:178:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  178 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:726:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  726 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53472	    136	   3696	  57304	   dfd8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+16:07:59 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53472	    136	   3696	  57304	   dfd8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+16:13:29 **** Incremental Build of configuration Debug for project lab6_4_CM4 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3184	     24	   1568	   4776	   12a8	lab6_4_CM4.elf
+Finished building: default.size.stdout
+ 
+16:13:30 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  177 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:178:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  178 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:726:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  726 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53472	    136	   3696	  57304	   dfd8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+16:13:32 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53472	    136	   3696	  57304	   dfd8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+16:14:10 **** Incremental Build of configuration Debug for project lab6_4_CM4 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3184	     24	   1568	   4776	   12a8	lab6_4_CM4.elf
+Finished building: default.size.stdout
+ 
+16:14:10 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:26: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  177 |   uart_buf_len = sprintf(uart_buf, "START!!...\r\n");
+      |                          ^~~~~~~~
+      |                          |
+      |                          uint16_t * {aka short unsigned int *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:178:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  178 |   HAL_UART_Transmit(&huart3, (int16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:726:30: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  726 |   HAL_UART_Transmit(&huart3, (uint16_t *)uart_buf, uart_buf_len, HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:458,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1614:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 1614 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "lab6_4_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Lab_6\lab6_4\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_4_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_4_CM7.elf
+ 
+arm-none-eabi-size   lab6_4_CM7.elf 
+arm-none-eabi-objdump -h -S  lab6_4_CM7.elf  > "lab6_4_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53472	    136	   3696	  57304	   dfd8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_4_CM7.list
+ 
+16:14:15 **** Incremental Build of configuration Debug for project lab6_4_CM7 ****
+make -j8 all 
+arm-none-eabi-size   lab6_4_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53472	    136	   3696	  57304	   dfd8	lab6_4_CM7.elf
+Finished building: default.size.stdout
+ 

@@ -1,0 +1,16 @@
+#include "stm32h7xx_hal.h"
+
+#include <stdio.h>
+#include <complex.h>
+
+print_int(char *string, int var);
+
+print_float(char *string, float var);
+
+print_clpx(char *string, cplx var);
+
+print_arrayInt(int arr);
+
+print_arrayFloat(float arr);
+
+print_arrayCplx(cplx arr);
