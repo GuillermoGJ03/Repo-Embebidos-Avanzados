@@ -1,62 +1,115 @@
-18:15:53 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+09:50:28 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54044	    500	   2212	  56756	   ddb4	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+09:50:36 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54044	    500	   2212	  56756	   ddb4	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+09:50:47 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54044	    500	   2212	  56756	   ddb4	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+10:12:06 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+10:12:07 **** Incremental Build of configuration Debug for project Planta_CM7 ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc "../Core/Src/mprls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/mprls.d" -MT"Core/Src/mprls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mprls.o"
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:632:3: warning: implicit declaration of function 'uart_send' [-Wimplicit-function-declaration]
+  632 |   uart_send(&huart3, MPRLS_data, 4);
+      |   ^~~~~~~~~
 arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Planta_CM7.elf
- 
-arm-none-eabi-size   Planta_CM7.elf 
-arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
-   text	   data	    bss	    dec	    hex	filename
-  53988	    508	   2132	  56628	   dd34	Planta_CM7.elf
-Finished building: default.size.stdout
- 
-Finished building: Planta_CM7.list
- 
-18:15:57 **** Incremental Build of configuration Debug for project Planta_CM7 ****
-make -j8 all 
-arm-none-eabi-size   Planta_CM7.elf 
-   text	   data	    bss	    dec	    hex	filename
-  53988	    508	   2132	  56628	   dd34	Planta_CM7.elf
-Finished building: default.size.stdout
- 
-18:18:27 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+c:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `HAL_TIM_PeriodElapsedCallback':
+C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/CM7/Debug/../Core/Src/main.c:632: undefined reference to `uart_send'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: Planta_CM7.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+10:12:35 **** Incremental Build of configuration Debug for project Planta_CM4 ****
 make -j8 all 
 arm-none-eabi-size   Planta_CM4.elf 
    text	   data	    bss	    dec	    hex	filename
    3128	     24	   1568	   4720	   1270	Planta_CM4.elf
 Finished building: default.size.stdout
  
-18:18:27 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+10:12:35 **** Incremental Build of configuration Debug for project Planta_CM7 ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/mprls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/mprls.d" -MT"Core/Src/mprls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mprls.o"
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:632:22: warning: passing argument 2 of 'send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  632 |   send_data(&huart3, MPRLS_data, 4);
+      |                      ^~~~~~~~~~
+      |                      |
+      |                      uint8_t * (*)(I2C_HandleTypeDef *) {aka unsigned char * (*)(struct __I2C_HandleTypeDef *)}
+In file included from ../Core/Src/main.c:25:
+../Core/Inc/uart.h:21:52: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t * (*)(I2C_HandleTypeDef *)' {aka 'unsigned char * (*)(struct __I2C_HandleTypeDef *)'}
+   21 | void send_data(UART_HandleTypeDef *huart, uint8_t *arr, uint8_t size);
+      |                                           ~~~~~~~~~^~~
 arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: Planta_CM7.elf
  
 arm-none-eabi-size   Planta_CM7.elf 
 arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
    text	   data	    bss	    dec	    hex	filename
-  53860	    508	   2132	  56500	   dcb4	Planta_CM7.elf
+  54380	    504	   2208	  57092	   df04	Planta_CM7.elf
 Finished building: default.size.stdout
  
 Finished building: Planta_CM7.list
  
-18:18:30 **** Incremental Build of configuration Debug for project Planta_CM7 ****
-make -j8 all 
-arm-none-eabi-size   Planta_CM7.elf 
-   text	   data	    bss	    dec	    hex	filename
-  53860	    508	   2132	  56500	   dcb4	Planta_CM7.elf
-Finished building: default.size.stdout
- 
-18:19:00 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+10:12:55 **** Incremental Build of configuration Debug for project Planta_CM4 ****
 make -j8 all 
 arm-none-eabi-size   Planta_CM4.elf 
    text	   data	    bss	    dec	    hex	filename
    3128	     24	   1568	   4720	   1270	Planta_CM4.elf
 Finished building: default.size.stdout
  
-18:19:00 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+10:12:56 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:632:22: warning: passing argument 2 of 'send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  632 |   send_data(&huart3, *MPRLS_data, 4);
+      |                      ^~~~~~~~~~~
+      |                      |
+      |                      uint8_t * (*)(I2C_HandleTypeDef *) {aka unsigned char * (*)(struct __I2C_HandleTypeDef *)}
+In file included from ../Core/Src/main.c:25:
+../Core/Inc/uart.h:21:52: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t * (*)(I2C_HandleTypeDef *)' {aka 'unsigned char * (*)(struct __I2C_HandleTypeDef *)'}
+   21 | void send_data(UART_HandleTypeDef *huart, uint8_t *arr, uint8_t size);
+      |                                           ~~~~~~~~~^~~
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  54380	    504	   2208	  57092	   df04	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+10:15:11 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+10:15:11 **** Incremental Build of configuration Debug for project Planta_CM7 ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
@@ -65,248 +118,537 @@ Finished building target: Planta_CM7.elf
 arm-none-eabi-size   Planta_CM7.elf 
 arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
    text	   data	    bss	    dec	    hex	filename
-  53820	    508	   2132	  56460	   dc8c	Planta_CM7.elf
+  54404	    504	   2208	  57116	   df1c	Planta_CM7.elf
 Finished building: default.size.stdout
  
 Finished building: Planta_CM7.list
  
-18:19:04 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+10:39:27 **** Incremental Build of configuration Debug for project Planta_CM7 ****
 make -j8 all 
-arm-none-eabi-size   Planta_CM7.elf 
-   text	   data	    bss	    dec	    hex	filename
-  53820	    508	   2132	  56460	   dc8c	Planta_CM7.elf
-Finished building: default.size.stdout
- 
-18:23:30 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:631:22: error: incompatible type for argument 2 of 'send_data'
+  631 |   send_data(&huart3, pressure, 1);
+      |                      ^~~~~~~~
+      |                      |
+      |                      float
+In file included from ../Core/Src/main.c:25:
+../Core/Inc/uart.h:21:52: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'float'
+   21 | void send_data(UART_HandleTypeDef *huart, uint8_t *arr, uint8_t size);
+      |                                           ~~~~~~~~~^~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+10:39:31 **** Incremental Build of configuration Debug for project Planta_CM4 ****
 make -j8 all 
 arm-none-eabi-size   Planta_CM4.elf 
    text	   data	    bss	    dec	    hex	filename
    3128	     24	   1568	   4720	   1270	Planta_CM4.elf
 Finished building: default.size.stdout
  
-18:23:31 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+10:39:32 **** Incremental Build of configuration Debug for project Planta_CM7 ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/mprls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/mprls.d" -MT"Core/Src/mprls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mprls.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:631:22: error: incompatible type for argument 2 of 'send_data'
+  631 |   send_data(&huart3, pressure, 1);
+      |                      ^~~~~~~~
+      |                      |
+      |                      float
+In file included from ../Core/Src/main.c:25:
+../Core/Inc/uart.h:21:52: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'float'
+   21 | void send_data(UART_HandleTypeDef *huart, uint8_t *arr, uint8_t size);
+      |                                           ~~~~~~~~~^~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+10:45:58 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+10:45:58 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: Planta_CM7.elf
  
 arm-none-eabi-size   Planta_CM7.elf 
 arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
    text	   data	    bss	    dec	    hex	filename
-  53820	    508	   2132	  56460	   dc8c	Planta_CM7.elf
+  53956	    500	   2204	  56660	   dd54	Planta_CM7.elf
 Finished building: default.size.stdout
  
 Finished building: Planta_CM7.list
  
-18:23:34 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+10:46:02 **** Incremental Build of configuration Debug for project Planta_CM7 ****
 make -j8 all 
 arm-none-eabi-size   Planta_CM7.elf 
    text	   data	    bss	    dec	    hex	filename
-  53820	    508	   2132	  56460	   dc8c	Planta_CM7.elf
+  53956	    500	   2204	  56660	   dd54	Planta_CM7.elf
 Finished building: default.size.stdout
  
-18:40:42 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+16:22:05 **** Clean-only build of configuration Debug for project Planta_CM4 ****
+make -j8 clean 
+rm -rf ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.su
+rm -rf ./Core/Startup/startup_stm32h745zitx.d ./Core/Startup/startup_stm32h745zitx.o
+rm -rf ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32h7xx_hal_msp.d ./Core/Src/stm32h7xx_hal_msp.o ./Core/Src/stm32h7xx_hal_msp.su ./Core/Src/stm32h7xx_it.d ./Core/Src/stm32h7xx_it.o ./Core/Src/stm32h7xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su
+rm -rf ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.su
+rm -rf Planta_CM4.elf Planta_CM4.list Planta_CM4.map default.size.stdout
+ 
+16:22:05 **** Incremental Build of configuration Debug for project Planta_CM4 ****
 make -j8 all 
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32h745zitx.d" -MT"Core/Startup/startup_stm32h745zitx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32h745zitx.o" "../Core/Startup/startup_stm32h745zitx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_hal_msp.d" -MT"Core/Src/stm32h7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_it.d" -MT"Core/Src/stm32h7xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d" -MT"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o"
+arm-none-eabi-gcc -o "Planta_CM4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM4\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM4.elf
+ 
 arm-none-eabi-size   Planta_CM4.elf 
+arm-none-eabi-objdump -h -S  Planta_CM4.elf  > "Planta_CM4.list"
    text	   data	    bss	    dec	    hex	filename
    3128	     24	   1568	   4720	   1270	Planta_CM4.elf
 Finished building: default.size.stdout
  
-18:40:43 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+Finished building: Planta_CM4.list
+ 
+16:22:11 **** Clean-only build of configuration Debug for project Planta_CM7 ****
+make -j8 clean 
+rm -rf ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.su
+rm -rf ./Core/Startup/startup_stm32h745zitx.d ./Core/Startup/startup_stm32h745zitx.o
+rm -rf ./Core/Src/fft.d ./Core/Src/fft.o ./Core/Src/fft.su ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/mprls.d ./Core/Src/mprls.o ./Core/Src/mprls.su ./Core/Src/mpu6050.d ./Core/Src/mpu6050.o ./Core/Src/mpu6050.su ./Core/Src/stm32h7xx_hal_msp.d ./Core/Src/stm32h7xx_hal_msp.o ./Core/Src/stm32h7xx_hal_msp.su ./Core/Src/stm32h7xx_it.d ./Core/Src/stm32h7xx_it.o ./Core/Src/stm32h7xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/uart.d ./Core/Src/uart.o ./Core/Src/uart.su
+rm -rf ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.su
+rm -rf Planta_CM7.elf Planta_CM7.list Planta_CM7.map default.size.stdout
+ 
+16:22:11 **** Incremental Build of configuration Debug for project Planta_CM7 ****
 make -j8 all 
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_tim_ex.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m7 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32h745zitx.d" -MT"Core/Startup/startup_stm32h745zitx.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32h745zitx.o" "../Core/Startup/startup_stm32h745zitx.s"
+arm-none-eabi-gcc "../Core/Src/fft.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fft.d" -MT"Core/Src/fft.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/fft.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc "../Core/Src/mprls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/mprls.d" -MT"Core/Src/mprls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mprls.o"
+arm-none-eabi-gcc "../Core/Src/mpu6050.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/mpu6050.d" -MT"Core/Src/mpu6050.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mpu6050.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_hal_msp.d" -MT"Core/Src/stm32h7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_it.d" -MT"Core/Src/stm32h7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/uart.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/uart.d" -MT"Core/Src/uart.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/uart.o"
+arm-none-eabi-gcc "C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d" -MT"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o"
 arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: Planta_CM7.elf
  
 arm-none-eabi-size   Planta_CM7.elf 
 arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
    text	   data	    bss	    dec	    hex	filename
-  53764	    508	   2124	  56396	   dc4c	Planta_CM7.elf
+  53988	    504	   2200	  56692	   dd74	Planta_CM7.elf
 Finished building: default.size.stdout
  
 Finished building: Planta_CM7.list
  
-18:40:51 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+16:23:17 **** Incremental Build of configuration Debug for project Planta_CM7 ****
 make -j8 all 
 arm-none-eabi-size   Planta_CM7.elf 
    text	   data	    bss	    dec	    hex	filename
-  53764	    508	   2124	  56396	   dc4c	Planta_CM7.elf
+  53988	    504	   2200	  56692	   dd74	Planta_CM7.elf
 Finished building: default.size.stdout
  
-18:44:01 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+14:17:00 **** Incremental Build of configuration Debug for project Planta_CM7 ****
 make -j8 all 
-arm-none-eabi-size   Planta_CM4.elf 
-   text	   data	    bss	    dec	    hex	filename
-   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
-Finished building: default.size.stdout
- 
-18:44:01 **** Incremental Build of configuration Debug for project Planta_CM7 ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/mprls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/mprls.d" -MT"Core/Src/mprls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mprls.o"
-../Core/Src/mprls.c: In function 'MPRLS_read':
-../Core/Src/mprls.c:34:27: error: expected ')' before 'buffer'
-   34 |  uint32_t psi = (uint32_t(buffer[1]) << 16) | (uint32_t(buffer[2]) << 8) | (uint32_t(buffer[3]));
-      |                           ^~~~~~
-      |                           )
-../Core/Src/mprls.c:34:37: error: expected ')' before '<<' token
-   34 |  uint32_t psi = (uint32_t(buffer[1]) << 16) | (uint32_t(buffer[2]) << 8) | (uint32_t(buffer[3]));
-      |                 ~                   ^~~
-      |                                     )
-../Core/Src/mprls.c:34:57: error: expected ')' before 'buffer'
-   34 |  uint32_t psi = (uint32_t(buffer[1]) << 16) | (uint32_t(buffer[2]) << 8) | (uint32_t(buffer[3]));
-      |                                                         ^~~~~~
-      |                                                         )
-../Core/Src/mprls.c:34:67: error: expected ')' before '<<' token
-   34 |  uint32_t psi = (uint32_t(buffer[1]) << 16) | (uint32_t(buffer[2]) << 8) | (uint32_t(buffer[3]));
-      |                                               ~                   ^~~
-      |                                                                   )
-../Core/Src/mprls.c:34:86: error: expected ')' before 'buffer'
-   34 |  uint32_t psi = (uint32_t(buffer[1]) << 16) | (uint32_t(buffer[2]) << 8) | (uint32_t(buffer[3]));
-      |                                                                                      ^~~~~~
-      |                                                                                      )
-make: *** [Core/Src/subdir.mk:43: Core/Src/mprls.o] Error 1
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:176:9: error: expected identifier before '*' token
+  176 |   TIM1->*1 = 100;          // Duty Cycle del 100%
+      |         ^
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
 "make -j8 all" terminated with exit code 2. Build might be incomplete.
-18:44:19 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+14:18:39 **** Incremental Build of configuration Debug for project Planta_CM4 ****
 make -j8 all 
 arm-none-eabi-size   Planta_CM4.elf 
    text	   data	    bss	    dec	    hex	filename
    3128	     24	   1568	   4720	   1270	Planta_CM4.elf
 Finished building: default.size.stdout
  
-18:44:20 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+14:18:39 **** Incremental Build of configuration Debug for project Planta_CM7 ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/mprls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/mprls.d" -MT"Core/Src/mprls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mprls.o"
-../Core/Src/mprls.c: In function 'MPRLS_read':
-../Core/Src/mprls.c:34:27: error: expected ')' before 'press_read'
-   34 |  uint32_t psi = (uint32_t(press_read[1]) << 16) | (uint32_t(press_read[2]) << 8) | (uint32_t(press_read[3]));
-      |                           ^~~~~~~~~~
-      |                           )
-../Core/Src/mprls.c:34:41: error: expected ')' before '<<' token
-   34 |  uint32_t psi = (uint32_t(press_read[1]) << 16) | (uint32_t(press_read[2]) << 8) | (uint32_t(press_read[3]));
-      |                 ~                       ^~~
-      |                                         )
-../Core/Src/mprls.c:34:61: error: expected ')' before 'press_read'
-   34 |  uint32_t psi = (uint32_t(press_read[1]) << 16) | (uint32_t(press_read[2]) << 8) | (uint32_t(press_read[3]));
-      |                                                             ^~~~~~~~~~
-      |                                                             )
-../Core/Src/mprls.c:34:75: error: expected ')' before '<<' token
-   34 |  uint32_t psi = (uint32_t(press_read[1]) << 16) | (uint32_t(press_read[2]) << 8) | (uint32_t(press_read[3]));
-      |                                                   ~                       ^~~
-      |                                                                           )
-../Core/Src/mprls.c:34:94: error: expected ')' before 'press_read'
-   34 |  uint32_t psi = (uint32_t(press_read[1]) << 16) | (uint32_t(press_read[2]) << 8) | (uint32_t(press_read[3]));
-      |                                                                                              ^~~~~~~~~~
-      |                                                                                              )
-make: *** [Core/Src/subdir.mk:43: Core/Src/mprls.o] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-18:45:50 **** Incremental Build of configuration Debug for project Planta_CM4 ****
-make -j8 all 
-arm-none-eabi-size   Planta_CM4.elf 
-   text	   data	    bss	    dec	    hex	filename
-   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
-Finished building: default.size.stdout
- 
-18:45:50 **** Incremental Build of configuration Debug for project Planta_CM7 ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/mprls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/mprls.d" -MT"Core/Src/mprls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mprls.o"
-../Core/Src/mprls.c: In function 'MPRLS_read':
-../Core/Src/mprls.c:34:48: error: expected ',' or ';' before ')' token
-   34 |  uint32_t psi = (uint32_t)(press_read[1]) << 16) | (uint32_t)(press_read[2]) << 8) | (uint32_t)(press_read[3]);
-      |                                                ^
-make: *** [Core/Src/subdir.mk:43: Core/Src/mprls.o] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-18:48:36 **** Incremental Build of configuration Debug for project Planta_CM4 ****
-make -j8 all 
-arm-none-eabi-size   Planta_CM4.elf 
-   text	   data	    bss	    dec	    hex	filename
-   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
-Finished building: default.size.stdout
- 
-18:48:36 **** Incremental Build of configuration Debug for project Planta_CM7 ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/mprls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/mprls.d" -MT"Core/Src/mprls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mprls.o"
-../Core/Src/mprls.c: In function 'MPRLS_read':
-../Core/Src/mprls.c:34:30: error: 'buffer' undeclared (first use in this function)
-   34 |  uint32_t psi1 = ((uint32_t)(buffer[1]) << 16) | ((uint32_t)(buffer[2]) << 8) | ((uint32_t)(buffer[3]));
-      |                              ^~~~~~
-../Core/Src/mprls.c:34:30: note: each undeclared identifier is reported only once for each function it appears in
-make: *** [Core/Src/subdir.mk:43: Core/Src/mprls.o] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-18:48:50 **** Incremental Build of configuration Debug for project Planta_CM4 ****
-make -j8 all 
-arm-none-eabi-size   Planta_CM4.elf 
-   text	   data	    bss	    dec	    hex	filename
-   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
-Finished building: default.size.stdout
- 
-18:48:50 **** Incremental Build of configuration Debug for project Planta_CM7 ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/mprls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/mprls.d" -MT"Core/Src/mprls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mprls.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: Planta_CM7.elf
  
 arm-none-eabi-size   Planta_CM7.elf 
 arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
    text	   data	    bss	    dec	    hex	filename
-  53788	    508	   2124	  56420	   dc64	Planta_CM7.elf
+  53988	    504	   2200	  56692	   dd74	Planta_CM7.elf
 Finished building: default.size.stdout
  
 Finished building: Planta_CM7.list
  
-18:49:06 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+14:19:09 **** Incremental Build of configuration Debug for project Planta_CM7 ****
 make -j8 all 
 arm-none-eabi-size   Planta_CM7.elf 
    text	   data	    bss	    dec	    hex	filename
-  53788	    508	   2124	  56420	   dc64	Planta_CM7.elf
+  53988	    504	   2200	  56692	   dd74	Planta_CM7.elf
 Finished building: default.size.stdout
  
-18:52:43 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+14:26:17 **** Incremental Build of configuration Debug for project Planta_CM4 ****
 make -j8 all 
 arm-none-eabi-size   Planta_CM4.elf 
    text	   data	    bss	    dec	    hex	filename
    3128	     24	   1568	   4720	   1270	Planta_CM4.elf
 Finished building: default.size.stdout
  
-18:52:43 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+14:26:17 **** Incremental Build of configuration Debug for project Planta_CM7 ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/mprls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/mprls.d" -MT"Core/Src/mprls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mprls.o"
-../Core/Src/mprls.c: In function 'MPRLS_read':
-../Core/Src/mprls.c:32:2: error: '_OUTPUT_min' undeclared (first use in this function); did you mean 'OUTPUT_OD'?
-   32 |  _OUTPUT_min = (uint32_t)((float)16777216L * (0 / 100.0) + 0.5);
-      |  ^~~~~~~~~~~
-      |  OUTPUT_OD
-../Core/Src/mprls.c:32:2: note: each undeclared identifier is reported only once for each function it appears in
-../Core/Src/mprls.c:33:2: error: '_OUTPUT_max' undeclared (first use in this function); did you mean 'OUTPUT_OD'?
-   33 |  _OUTPUT_max = (uint32_t)((float)16777216L * (90/ 100.0) + 0.5);
-      |  ^~~~~~~~~~~
-      |  OUTPUT_OD
-make: *** [Core/Src/subdir.mk:43: Core/Src/mprls.o] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-18:53:01 **** Incremental Build of configuration Debug for project Planta_CM4 ****
-make -j8 all 
-arm-none-eabi-size   Planta_CM4.elf 
-   text	   data	    bss	    dec	    hex	filename
-   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
-Finished building: default.size.stdout
- 
-18:53:02 **** Incremental Build of configuration Debug for project Planta_CM7 ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/mprls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/mprls.d" -MT"Core/Src/mprls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mprls.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: Planta_CM7.elf
  
 arm-none-eabi-size   Planta_CM7.elf 
 arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
    text	   data	    bss	    dec	    hex	filename
-  53804	    500	   2132	  56436	   dc74	Planta_CM7.elf
+  53788	    504	   2184	  56476	   dc9c	Planta_CM7.elf
 Finished building: default.size.stdout
  
 Finished building: Planta_CM7.list
  
-18:53:05 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+14:26:20 **** Incremental Build of configuration Debug for project Planta_CM7 ****
 make -j8 all 
 arm-none-eabi-size   Planta_CM7.elf 
    text	   data	    bss	    dec	    hex	filename
-  53804	    500	   2132	  56436	   dc74	Planta_CM7.elf
+  53788	    504	   2184	  56476	   dc9c	Planta_CM7.elf
 Finished building: default.size.stdout
+ 
+14:26:38 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53788	    504	   2184	  56476	   dc9c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+14:28:18 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+14:28:19 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  54236	    508	   2188	  56932	   de64	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+14:28:27 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54236	    508	   2188	  56932	   de64	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+14:29:03 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+14:29:04 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  54244	    508	   2188	  56940	   de6c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+14:29:07 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54244	    508	   2188	  56940	   de6c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+14:32:19 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54244	    508	   2188	  56940	   de6c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+14:34:45 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+14:34:45 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  54244	    508	   2188	  56940	   de6c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+14:34:48 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54244	    508	   2188	  56940	   de6c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+14:35:09 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+14:35:09 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53996	    508	   2188	  56692	   dd74	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+14:35:16 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53996	    508	   2188	  56692	   dd74	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+14:51:02 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+14:51:03 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53788	    504	   2184	  56476	   dc9c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+14:51:06 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53788	    504	   2184	  56476	   dc9c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+14:52:45 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53788	    504	   2184	  56476	   dc9c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+14:57:41 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53788	    504	   2184	  56476	   dc9c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+18:49:38 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53788	    504	   2184	  56476	   dc9c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+18:49:50 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+18:49:51 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53788	    504	   2184	  56476	   dc9c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+18:50:33 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+18:50:33 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53788	    504	   2184	  56476	   dc9c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+18:50:36 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53788	    504	   2184	  56476	   dc9c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+10:27:21 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+10:27:22 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53804	    504	   2184	  56492	   dcac	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+10:27:31 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53804	    504	   2184	  56492	   dcac	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+10:28:08 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53804	    504	   2184	  56492	   dcac	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+10:29:15 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+10:29:16 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53804	    504	   2184	  56492	   dcac	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+10:29:20 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53804	    504	   2184	  56492	   dcac	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+10:30:41 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53788	    504	   2184	  56476	   dc9c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
  

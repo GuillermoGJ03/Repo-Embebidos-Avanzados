@@ -17,3 +17,5 @@ void print_arrayInt(UART_HandleTypeDef *huart, int *arr, uint16_t size);
 void print_arrayFloat(UART_HandleTypeDef *huart, float *arr, uint16_t size);
 
 void print_arrayCplx(UART_HandleTypeDef *huart, cplx *arr, uint16_t size);
+
+void send_data(UART_HandleTypeDef *huart, uint8_t *arr, uint8_t size);

@@ -58,6 +58,7 @@ I2C_HandleTypeDef hi2c4;
 
 TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim2;
+TIM_HandleTypeDef htim3;
 TIM_HandleTypeDef htim5;
 
 UART_HandleTypeDef huart3;
@@ -70,6 +71,7 @@ float *gyr;												// Lectura del giroscopio
 
 // Variables de muestreo MPRLS
 float pressure;
+uint8_t *press_raw;
 
 unsigned timer_val; 									// Variable de comprobación de tiempo
 /* USER CODE END PV */
@@ -82,6 +84,7 @@ static void MX_TIM2_Init(void);
 static void MX_TIM5_Init(void);
 static void MX_I2C4_Init(void);
 static void MX_TIM1_Init(void);
+static void MX_TIM3_Init(void);
 /* USER CODE BEGIN PFP */
 void print_Readings(void);
 /* USER CODE END PFP */
@@ -153,6 +156,7 @@ Error_Handler();
   MX_TIM5_Init();
   MX_I2C4_Init();
   MX_TIM1_Init();
+  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 
   print_int(&huart3, "PROYECTO FINAL ROBOGOD\r\n", 0);	// Prueba de comunicación UART
@@ -165,16 +169,19 @@ Error_Handler();
 
   HAL_TIM_Base_Start(&htim5); 							// Inicialización del timer 5 (cronómetro)
 
+  HAL_Delay(2000);										// Delay 2s
+
   HAL_TIM_PWM_Init(&htim1);								// Inicialización del timer 1 (PWM)
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);				// Encendido del PWM
-  TIM1->CCR1 = 100;										// Duty Cycle del 0%
+  TIM1->CCR1 = 100;										// Duty Cycle del 100%
+
   // Cambiar las dos líneas anteriores, no enceder el PWM hasta que el control lo requiera, y apagarlo después
   // Entradas de polaridad del L298N
   HAL_GPIO_WritePin(GPIOD, GPIO_PIN_0, SET);			// In 1
   HAL_GPIO_WritePin(GPIOD, GPIO_PIN_1, RESET);			// In 2
 
   HAL_TIM_Base_Start_IT(&htim2);						// Inicialización del timer 2 (interrupción 128 Hz)
-
+  HAL_TIM_Base_Start_IT(&htim3);						// Inicialización del timer 3 (interrupción 100 Hz)
 
   /* USER CODE END 2 */
 
@@ -185,6 +192,7 @@ Error_Handler();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
   }
   /* USER CODE END 3 */
 }
@@ -421,6 +429,51 @@ static void MX_TIM2_Init(void)
 }
 
 /**
+  * @brief TIM3 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM3_Init(void)
+{
+
+  /* USER CODE BEGIN TIM3_Init 0 */
+
+  /* USER CODE END TIM3_Init 0 */
+
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+
+  /* USER CODE BEGIN TIM3_Init 1 */
+
+  /* USER CODE END TIM3_Init 1 */
+  htim3.Instance = TIM3;
+  htim3.Init.Prescaler = 240 - 1;
+  htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim3.Init.Period = 10000 - 1;
+  htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim3, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim3, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM3_Init 2 */
+
+  /* USER CODE END TIM3_Init 2 */
+
+}
+
+/**
   * @brief TIM5 Initialization Function
   * @param None
   * @retval None
@@ -536,6 +589,12 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOD, IN1_Pin|IN2_Pin, GPIO_PIN_RESET);
 
+  /*Configure GPIO pin : B1_Pin */
+  GPIO_InitStruct.Pin = B1_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
+
   /*Configure GPIO pins : LD1_Pin LD3_Pin */
   GPIO_InitStruct.Pin = LD1_Pin|LD3_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
@@ -556,10 +615,8 @@ static void MX_GPIO_Init(void)
 
 // Interrupción por timer (TIM2) a 128 Hz
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
-	if (htim == &htim2)
-	{
+	if (htim == &htim2){
 		//print_int(&huart3, "Muestra: %u\r\n", nm);
-		pressure = MPRLS_read(&hi2c4);
 
 		//if(nm == 0) timer_val = __HAL_TIM_GET_COUNTER(&htim5);
 		/* Si el número de muestras es cero,
@@ -568,7 +625,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 																 * total.
 		 	 	 	 	 	 	 	 	 	 	 	 	 	 	 */
 		//HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_14);					// Toggle del LED ROJO cada muestra
-		gyr = MPU6050_read_gyro(&hi2c4);						// Lectura del giroscopio del MPU6050
+		//gyr = MPU6050_read_gyro(&hi2c4);						// Lectura del giroscopio del MPU6050
 
 		// Guardado de muestras en los arreglos
 		//muestras_x[nm] = gyr[0];
@@ -576,12 +633,16 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 		//muestras_z[nm] = gyr[2];
 
 		nm++;													// Incremento del contador de muestras
-		print_Readings();
+		//print_Readings();
+	}
+	if (htim == &htim3){
+		press_raw = MPRLS_data(&hi2c4);
+		send_data(&huart3, press_raw, 4);
 	}
 }
 
 void print_Readings(void){
-	print_float(&huart3, "Presión: %.5f\r\n", pressure);
+	//print_float(&huart3, "Presión: %.5f\r\n", pressure);
 	/*print_float(&huart3, "Gyr X: %.5f\r\n", gyr[0]);
 	print_float(&huart3, "Gyr y: %.5f\r\n", gyr[1]);
 	print_float(&huart3, "Gyr z: %.5f\r\n", gyr[2]);*/
