@@ -37,6 +37,9 @@
 // Dirección del MPRLS
 #define MT 128			// Muestras totales (128 Hz)
 
+#define KP 0.344
+#define KI 0.0112
+
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -74,6 +77,11 @@ float pressure;
 uint8_t *press_raw;
 
 unsigned timer_val; 									// Variable de comprobación de tiempo
+
+float ts = 0.1, control, error, errorPrev = 0;
+uint32_t pk, pkPrev;
+float reference = 12.0;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -173,9 +181,8 @@ Error_Handler();
 
   HAL_TIM_PWM_Init(&htim1);								// Inicialización del timer 1 (PWM)
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);				// Encendido del PWM
-  TIM1->CCR1 = 100;										// Duty Cycle del 100%
+  TIM1->CCR1 = 0;										// Duty Cycle del 100%
 
-  // Cambiar las dos líneas anteriores, no enceder el PWM hasta que el control lo requiera, y apagarlo después
   // Entradas de polaridad del L298N
   HAL_GPIO_WritePin(GPIOD, GPIO_PIN_0, SET);			// In 1
   HAL_GPIO_WritePin(GPIOD, GPIO_PIN_1, RESET);			// In 2
@@ -636,8 +643,27 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 		//print_Readings();
 	}
 	if (htim == &htim3){
-		press_raw = MPRLS_data(&hi2c4);
-		send_data(&huart3, press_raw, 4);
+		//press_raw = MPRLS_data(&hi2c4);
+		//send_data(&huart3, press_raw, 4);
+		pkPrev = TIM1->CCR1;
+		error = reference - pressure;
+		control = KP*error + KI*ts*(error + errorPrev);// + (kd/ts)*(error - errorPrev);
+		pk = pkPrev + control*40;
+		errorPrev = error;
+
+		if (pk >= 100){
+			TIM1->CCR1 = 100;
+		}else if (pk <= 0){
+			TIM1->CCR1 = 0;
+		}else{
+			TIM1->CCR1 = pk;
+		}
+
+		pressure = MPRLS_read(&hi2c4);
+		print_float(&huart3, "Presión: %.5f\r\n", pressure);
+		print_int(&huart3, "PWM: %u\r\n", pk);
+		print_float(&huart3, "Control: %.5f\r\n", control);
+
 	}
 }
 

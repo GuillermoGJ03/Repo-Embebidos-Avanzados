@@ -702,7 +702,7 @@ void HAL_TIM_PeriodElapsedCallback (TIM_HandleTypeDef *htim)
 		pkPrev = TIM1->CCR2;
 		error = reference - rpm;
 		control = kp*error + ki*ts*(error + errorPrev);// + (kd/ts)*(error - errorPrev);
-		pk = pkPrev + control;x|
+		pk = pkPrev + control;
 		errorPrev = error;
 
 

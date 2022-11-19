@@ -652,3 +652,426 @@ Finished building: default.size.stdout
  
 Finished building: Planta_CM7.list
  
+16:55:52 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+16:55:52 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  53788	    504	   2184	  56476	   dc9c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+16:55:57 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53788	    504	   2184	  56476	   dc9c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+16:56:21 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+16:56:21 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53788	    504	   2184	  56476	   dc9c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+17:06:46 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+17:06:47 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:649:3: error: 'pkPrev' undeclared (first use in this function)
+  649 |   pkPrev = TIM1->CCR2;
+      |   ^~~~~~
+../Core/Src/main.c:649:3: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:652:3: error: 'pk' undeclared (first use in this function)
+  652 |   pk = pkPrev + control;
+      |   ^~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+17:07:21 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+17:07:21 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  54356	    512	   2208	  57076	   def4	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+17:07:27 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54356	    512	   2208	  57076	   def4	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+17:08:33 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+17:08:34 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  54356	    512	   2208	  57076	   def4	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+17:08:39 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54356	    512	   2208	  57076	   def4	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+17:09:09 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+17:09:09 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  54356	    512	   2208	  57076	   def4	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+17:09:12 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54356	    512	   2208	  57076	   def4	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+17:14:27 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+17:14:27 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/mprls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/mprls.d" -MT"Core/Src/mprls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mprls.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  54436	    516	   2212	  57164	   df4c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+17:14:30 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54436	    516	   2212	  57164	   df4c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+17:16:11 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+17:16:12 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  54548	    516	   2212	  57276	   dfbc	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+17:16:14 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54548	    516	   2212	  57276	   dfbc	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+17:16:28 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+17:16:28 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  54548	    516	   2212	  57276	   dfbc	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+17:16:31 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54548	    516	   2212	  57276	   dfbc	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+17:34:47 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/mprls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/mprls.d" -MT"Core/Src/mprls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mprls.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  54204	    516	   2212	  56932	   de64	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+17:34:54 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+17:34:54 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54204	    516	   2212	  56932	   de64	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+17:34:56 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54204	    516	   2212	  56932	   de64	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+17:37:26 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+17:37:26 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/mprls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/mprls.d" -MT"Core/Src/mprls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mprls.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  54204	    516	   2204	  56924	   de5c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+17:37:36 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54204	    516	   2204	  56924	   de5c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+17:50:26 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+17:50:26 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/mprls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/mprls.d" -MT"Core/Src/mprls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mprls.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  54204	    516	   2204	  56924	   de5c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+17:50:34 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54204	    516	   2204	  56924	   de5c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+17:52:47 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+17:52:47 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  54188	    516	   2204	  56908	   de4c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+17:52:51 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54188	    516	   2204	  56908	   de4c	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+17:53:58 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  54244	    516	   2204	  56964	   de84	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+17:55:24 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+17:55:24 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  54276	    516	   2204	  56996	   dea4	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+17:55:27 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54276	    516	   2204	  56996	   dea4	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+18:24:39 **** Incremental Build of configuration Debug for project Planta_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3128	     24	   1568	   4720	   1270	Planta_CM4.elf
+Finished building: default.size.stdout
+ 
+18:24:39 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Planta_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Codigo_Planta\Planta\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Planta_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Planta_CM7.elf
+ 
+arm-none-eabi-size   Planta_CM7.elf 
+arm-none-eabi-objdump -h -S  Planta_CM7.elf  > "Planta_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  54284	    516	   2204	  57004	   deac	Planta_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Planta_CM7.list
+ 
+18:24:42 **** Incremental Build of configuration Debug for project Planta_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Planta_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54284	    516	   2204	  57004	   deac	Planta_CM7.elf
+Finished building: default.size.stdout
+ 

@@ -9,7 +9,7 @@ outputmax = 16777216 * (outputmax / 100.0) + 0.5;
 
 %%
 t = out.time;
-psi = out.psi3.Data;
+psi = out.psi.Data;
 pressure = zeros(length(t));
 for i = 1:length(t)
     pressure(i) = psi(:,:,i);
@@ -18,10 +18,10 @@ end
 ref = zeros(1, length(t));
 
 for i = 1:600
-    ref(i) = 11.3862;
+    ref(i) = 11.2914;
 end 
 for i = 601:length(t)
-    ref(i) = 13.0000;
+    ref(i) = 12.93;
 end 
 
 figure
@@ -35,3 +35,6 @@ xlabel('Time [s]')
 grid on
 
 hold off
+
+%%
+plot(abs(fft(pressure)));
