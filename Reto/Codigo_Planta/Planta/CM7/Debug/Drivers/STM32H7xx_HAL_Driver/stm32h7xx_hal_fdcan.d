@@ -1,4 +1,5 @@
-Core/Src/fft.o: ../Core/Src/fft.c ../Core/Inc/fft.h \
+Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_fdcan.o: \
+ C:/Users/Ponchito/Desktop/Codigo_Planta/Planta/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_fdcan.c \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../Core/Inc/stm32h7xx_hal_conf.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \
@@ -32,7 +33,6 @@ Core/Src/fft.o: ../Core/Src/fft.c ../Core/Inc/fft.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
-../Core/Inc/fft.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:
