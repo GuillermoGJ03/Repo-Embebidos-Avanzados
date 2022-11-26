@@ -1,9 +1,0 @@
-#include "stm32h7xx_hal.h"
-#include <complex.h>
-#include <math.h>
-
-typedef float complex cplx;
-
-int reverse_bit(int n, int length);
-
-void fft(float *arr, int size, cplx *xFFT);

@@ -1,3 +1,0 @@
-../Core/Src/mpu6050.c:16:6:MPU6050_status	24	static
-../Core/Src/mpu6050.c:22:9:MPU6050_init	32	static
-../Core/Src/mpu6050.c:36:8:MPU6050_read_gyro	40	static

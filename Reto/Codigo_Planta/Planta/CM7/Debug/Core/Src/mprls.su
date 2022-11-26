@@ -1,4 +1,0 @@
-../Core/Src/mprls.c:14:6:MPRLS_status	24	static
-../Core/Src/mprls.c:20:6:MPRLS_init	16	static
-../Core/Src/mprls.c:25:7:MPRLS_read	32	static
-../Core/Src/mprls.c:36:10:MPRLS_data	24	static
