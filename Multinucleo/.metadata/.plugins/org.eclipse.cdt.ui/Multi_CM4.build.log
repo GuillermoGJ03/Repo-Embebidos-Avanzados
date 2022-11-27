@@ -1,0 +1,10 @@
+16:42:13 **** Incremental Build of configuration Debug for project Multi_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Multi_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4464	     24	   1568	   6056	   17a8	Multi_CM4.elf
+Finished building: default.size.stdout
+ 
+
+16:42:14 Build Finished. 0 errors, 0 warnings. (took 236ms)
+

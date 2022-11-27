@@ -1,0 +1,28 @@
+16:42:08 **** Incremental Build of configuration Debug for project Multi_CM4 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:271:1: warning: return type defaults to 'int' [-Wimplicit-int]
+  271 | HAL_HSEM_FreeCallback(uint32_t SemMask){
+      | ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:271:1: warning: conflicting types for 'HAL_HSEM_FreeCallback'
+../Core/Src/main.c:82:6: note: previous declaration of 'HAL_HSEM_FreeCallback' was here
+   82 | void HAL_HSEM_FreeCallback(uint32_t SemMask);
+      |      ^~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Multi_CM4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Ponchito\Desktop\Multinucleo\Multi\CM4\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Multi_CM4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Multi_CM4.elf
+ 
+arm-none-eabi-size   Multi_CM4.elf 
+arm-none-eabi-objdump -h -S  Multi_CM4.elf  > "Multi_CM4.list"
+   text	   data	    bss	    dec	    hex	filename
+   4464	     24	   1568	   6056	   17a8	Multi_CM4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Multi_CM4.list
+ 
+16:42:13 **** Incremental Build of configuration Debug for project Multi_CM4 ****
+make -j8 all 
+arm-none-eabi-size   Multi_CM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4464	     24	   1568	   6056	   17a8	Multi_CM4.elf
+Finished building: default.size.stdout
+ 
