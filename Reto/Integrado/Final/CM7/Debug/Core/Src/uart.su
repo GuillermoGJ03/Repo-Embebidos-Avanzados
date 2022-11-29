@@ -1,0 +1,8 @@
+../Core/Src/uart.c:12:6:print_int	24	static
+../Core/Src/uart.c:17:6:print_float	24	static
+../Core/Src/uart.c:22:6:print_cplx	40	static
+../Core/Src/uart.c:27:6:print_arrayInt	32	static
+../Core/Src/uart.c:32:6:print_arrayFloat	32	static
+../Core/Src/uart.c:37:6:print_arrayCplx	32	static
+../Core/Src/uart.c:42:6:send_data	24	static
+../Core/Src/uart.c:46:6:send_data_float	24	static

@@ -1,0 +1,50 @@
+17:17:56 **** Incremental Build of configuration Debug for project Final_CM7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H745xx -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_FDCAN_RxFifo0Callback':
+../Core/Src/main.c:531:66: warning: pointer targets in passing argument 4 of 'HAL_FDCAN_GetRxMessage' differ in signedness [-Wpointer-sign]
+  531 |  if (HAL_FDCAN_GetRxMessage(&hfdcan1, FDCAN_RX_FIFO0, &RxHeader, RxData) == HAL_OK){
+      |                                                                  ^~~~~~
+      |                                                                  |
+      |                                                                  int8_t * {aka signed char *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:302,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_fdcan.h:2030:135: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int8_t *' {aka 'signed char *'}
+ 2030 | HAL_StatusTypeDef HAL_FDCAN_GetRxMessage(FDCAN_HandleTypeDef *hfdcan, uint32_t RxLocation, FDCAN_RxHeaderTypeDef *pRxHeader, uint8_t *pRxData);
+      |                                                                                                                              ~~~~~~~~~^~~~~~~
+../Core/Src/main.c: In function 'lcd_display':
+../Core/Src/main.c:562:58: warning: pointer targets in passing argument 3 of 'HAL_FDCAN_AddMessageToTxFifoQ' differ in signedness [-Wpointer-sign]
+  562 |  if (HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan1, &TxHeader2, TxData2) != HAL_OK){}
+      |                                                          ^~~~~~~
+      |                                                          |
+      |                                                          int8_t * {aka signed char *}
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:302,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_fdcan.h:2025:121: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int8_t *' {aka 'signed char *'}
+ 2025 | HAL_StatusTypeDef HAL_FDCAN_AddMessageToTxFifoQ(FDCAN_HandleTypeDef *hfdcan, FDCAN_TxHeaderTypeDef *pTxHeader, uint8_t *pTxData);
+      |                                                                                                                ~~~~~~~~~^~~~~~~
+../Core/Src/main.c:564:17: warning: pointer targets in assignment from 'uint8_t *' {aka 'unsigned char *'} to 'int8_t *' {aka 'signed char *'} differ in signedness [-Wpointer-sign]
+  564 |  pressureBuffer = (uint8_t*)(&press);
+      |                 ^
+arm-none-eabi-gcc -o "Final_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Ponchito\Desktop\Integrado\Final\CM7\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Final_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Final_CM7.elf
+ 
+arm-none-eabi-size   Final_CM7.elf 
+arm-none-eabi-objdump -h -S  Final_CM7.elf  > "Final_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  63876	    504	   4864	  69244	  10e7c	Final_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: Final_CM7.list
+ 
+17:18:00 **** Incremental Build of configuration Debug for project Final_CM7 ****
+make -j8 all 
+arm-none-eabi-size   Final_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  63876	    504	   4864	  69244	  10e7c	Final_CM7.elf
+Finished building: default.size.stdout
+ 
