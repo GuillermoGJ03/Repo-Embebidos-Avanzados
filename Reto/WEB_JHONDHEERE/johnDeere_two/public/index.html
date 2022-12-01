@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ESP IoT Firebase DASH</title>
+
+    <!-- update the version number as needed -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+
+    <!-- include only the Firebase features as you need -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+
+    <script src="https://cdn.rawgit.com/Mikhus/canvas-gauges/gh-pages/download/2.1.7/all/gauge.min.js"></script>
+
+    <link rel="canonical" href="Https://preview.keenthemes.com/jet-free" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="assets6/media/avatars/jhon_deere_logo_as.png"
+    />
+
+    <!--begin::Fonts-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700"
+    />
+    <!--end::Fonts-->
+    <!--begin::Global Stylesheets Bundle(used by all pages)-->
+    <link
+      href="assets6/plugins/global/plugins.bundle.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    
+    <link href="assets6/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <!--end::Global Stylesheets Bundle-->
+
+    <script>
+      // REPLACE WITH YOUR web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBH94lKsXSDNGF9j5_PGlwYXFaa6JyX6oA",
+        authDomain: "jhondeere-b2861.firebaseapp.com",
+        projectId: "jhondeere-b2861",
+        storageBucket: "jhondeere-b2861.appspot.com",
+        messagingSenderId: "47879103829",
+        appId: "1:47879103829:web:b7053e485966071818bbdc",
+        measurementId: "-BV4CZK88ZD",
+      };
+
+      // Initialize firebase
+      firebase.initializeApp(firebaseConfig);
+
+      // Make auth and database references
+      const auth = firebase.auth();
+      const db = firebase.database();
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+  </head>
+
+  <body
+    id="kt_body"
+    class="header-fixed header-tablet-and-mobile-fixed aside-fixed aside-secondary-disabled"
+  >
+
+
+
+
+
+
+
+
+						    <!--LOGIN FORM-->
+    <form  id="login-form" style="display: none">
+
+      
+
+            <div class="mb-5 card bg-dark">
+										<!--begin::Body-->
+										<div class="card-body py-5">
+
+										<div class="text-center mb-12">
+											<!--begin::Title-->
+											<h3 class="fs-2hx text-success mb-5">Final project</h3>
+											<!--end::Title-->
+											<!--begin::Sub-title-->
+											<div class="fs-5 text-white fw-bold">This project consisted of developing an intelligent platform for air pressure control of agricultural equipment tires.</div>
+											<!--end::Sub-title=-->
+										</div>
+
+
+											<!--begin::Wrapper-->
+											<div class="d-flex flex-center">
+												<!--begin::Items-->
+												<div class="d-flex justify-content-between mb-5 mx-auto">
+													<!--begin::Item-->
+													<div class="d-flex flex-center mx-2">
+														<!--begin::Content-->
+														<div class="text-center">
+
+
+
+
+														</div>
+														<!--end::Content-->
+													</div>
+													<!--end::Item-->
+													<!--begin::Item-->
+													<div class="d-flex flex-center mx-2">
+														<!--begin::Content-->
+														<div class="text-center">
+
+
+                              <div class="form-elements-container">
+                                <label  class="text-white" for="input-email"><b>Email</b></label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Enter Username"
+                                  id="input-email"
+                                  required
+                                />
+
+                                <label class="text-white" for="input-password"><b>Password</b></label>
+                                <input
+                                  type="password"
+                                  class="form-control"
+                                  placeholder="Enter Password"
+                                  id="input-password"
+                                  required
+                                />
+
+                                
+                                <p id="error-message" style="color: red"></p>
+                            </div>
+                              <button class="btn btn-success" type="submit" id="login-button">Login</button>
+															
+
+
+
+
+														</div>
+														<!--end::Content-->
+													</div>
+													<!--end::Item-->
+													<!--begin::Item-->
+													<div class=" d-flex flex-center mx-2">
+														<!--begin::Content-->
+														<div class="text-center">
+															
+
+
+
+														</div>
+														<!--end::Content-->
+													</div>
+													<!--end::Item-->
+												</div>
+												<!--end::Items-->
+											</div>
+											<!--end::Wrapper-->
+
+										</div>
+										<!--end::Body-->
+									</div>
+
+
+            
+
+
+                  <div class="mb-18">
+										<!--begin::Heading-->
+										<div class="text-center mb-12">
+											<!--begin::Title-->
+											<h3 class="fs-2hx text-success mb-5">Our Great Team</h3>
+											<!--end::Title-->
+											<!--begin::Sub-title-->
+											<div class="fs-5 text-white fw-bold">It’s no doubt that when a development takes longer to complete, additional costs to
+											<br>integrate and test each extra feature creeps up and haunts most of us.</div>
+											<!--end::Sub-title=-->
+										</div>
+										<!--end::Heading-->
+										<!--begin::Slider-->
+										<div class="tns tns-default mb-10 tns-initiazlied">
+											<!--begin::Wrapper-->
+											<div class="tns-outer" id="tns1-ow"><div class="tns-liveregion tns-visually-hidden" aria-live="polite" aria-atomic="true">slide <span class="current">8 to 15</span>  of 7</div><div id="tns1-mw" class="tns-ovh"><div class="tns-inner" id="tns1-iw"><div data-tns="true" data-tns-loop="true" data-tns-swipe-angle="false" data-tns-speed="2000" data-tns-autoplay="true" data-tns-autoplay-timeout="18000" data-tns-controls="true" data-tns-nav="false" data-tns-items="1" data-tns-center="false" data-tns-dots="false" data-tns-prev-button="#kt_team_slider_prev" data-tns-next-button="#kt_team_slider_next" data-tns-responsive="{1200: {items: 3}, 992: {items: 2}}" class="  tns-slider tns-carousel tns-subpixel tns-calc tns-horizontal" id="tns1" style="transform: translate3d(-46.6667%, 0px, 0px);"><div class="text-center tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+													<!--begin::Photo-->
+													<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('assets6/media/avatars/genis_6_foto.png"></div>
+													<!--end::Photo-->
+													<!--begin::Person-->
+													<div class="mb-0">
+														<!--begin::Name-->
+														<a href="account/overview.html" class="text-white fw-bolder text-hover-primary fs-3">Armando Genis Alvarez</a>
+														<!--end::Name-->
+														<!--begin::Position-->
+														<div class="text-success fs-6 fw-bold mt-1">Project Manager</div>
+														<!--begin::Position-->
+													</div>
+													<!--end::Person-->
+												</div><div class="text-center tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+													<!--begin::Photo-->
+													<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('assets6/media/avatars/alfonso_foto.jpg')"></div>
+													<!--end::Photo-->
+													<!--begin::Person-->
+													<div class="mb-0">
+														<!--begin::Name-->
+														<a href="account/overview.html" class="text-white fw-bolder text-hover-primary fs-3">Luis Alfonso Pérez Mijangos </a>
+														<!--end::Name-->
+														<!--begin::Position-->
+														<div class="text-success fs-6 fw-bold mt-1">Project Manager</div>
+														<!--begin::Position-->
+													</div>
+													<!--end::Person-->
+												</div>
+                        <div class="text-center tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+													<!--begin::Photo-->
+													<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('assets6/media/avatars/memo_foto.jpg')"></div>
+													<!--end::Photo-->
+													<!--begin::Person-->
+													<div class="mb-0">
+														<!--begin::Name-->
+														<a href="account/overview.html" class="text-white fw-bolder text-hover-primary fs-3">Guillermo González Jiménez</a>
+														<!--end::Name-->
+														<!--begin::Position-->
+														<div class="text-success fs-6 fw-bold mt-1">Project Manager</div>
+														<!--begin::Position-->
+													</div>
+													<!--end::Person-->
+												</div>
+                        
+												<!--end::Item-->
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+											<!--end::Wrapper-->
+											<!--begin::Button-->
+											<a class="btn btn-icon btn-active-color-primary" id="kt_team_slider_prev" aria-controls="tns1" tabindex="-1" data-controls="prev">
+												<!--begin::Svg Icon | path: icons/duotone/Navigation/Angle-left.svg-->
+												<span class="svg-icon svg-icon-3x">
+													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+														<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															<polygon points="0 0 24 0 24 24 0 24"></polygon>
+															<path d="M6.70710678,15.7071068 C6.31658249,16.0976311 5.68341751,16.0976311 5.29289322,15.7071068 C4.90236893,15.3165825 4.90236893,14.6834175 5.29289322,14.2928932 L11.2928932,8.29289322 C11.6714722,7.91431428 12.2810586,7.90106866 12.6757246,8.26284586 L18.6757246,13.7628459 C19.0828436,14.1360383 19.1103465,14.7686056 18.7371541,15.1757246 C18.3639617,15.5828436 17.7313944,15.6103465 17.3242754,15.2371541 L12.0300757,10.3841378 L6.70710678,15.7071068 Z" fill="#000000" fill-rule="nonzero" transform="translate(12.000003, 11.999999) scale(-1, 1) rotate(-270.000000) translate(-12.000003, -11.999999)"></path>
+														</g>
+													</svg>
+												</span>
+												<!--end::Svg Icon-->
+											</a>
+											<!--end::Button-->
+											<!--begin::Button-->
+											<a class="btn btn-icon btn-active-color-primary" id="kt_team_slider_next" aria-controls="tns1" tabindex="-1" data-controls="next">
+												<!--begin::Svg Icon | path: icons/duotone/Navigation/Angle-right.svg-->
+												<span class="svg-icon svg-icon-3x">
+													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+														<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															<polygon points="0 0 24 0 24 24 0 24"></polygon>
+															<path d="M6.70710678,15.7071068 C6.31658249,16.0976311 5.68341751,16.0976311 5.29289322,15.7071068 C4.90236893,15.3165825 4.90236893,14.6834175 5.29289322,14.2928932 L11.2928932,8.29289322 C11.6714722,7.91431428 12.2810586,7.90106866 12.6757246,8.26284586 L18.6757246,13.7628459 C19.0828436,14.1360383 19.1103465,14.7686056 18.7371541,15.1757246 C18.3639617,15.5828436 17.7313944,15.6103465 17.3242754,15.2371541 L12.0300757,10.3841378 L6.70710678,15.7071068 Z" fill="#000000" fill-rule="nonzero" transform="translate(12.000003, 11.999999) rotate(-270.000000) translate(-12.000003, -11.999999)"></path>
+														</g>
+													</svg>
+												</span>
+												<!--end::Svg Icon-->
+											</a>
+											<!--end::Button-->
+										</div>
+										<!--end::Items-->
+									</div>
+
+
+
+
+
+
+          </div>
+        </div>
+
+
+    </form>
+
+	
+
+
+    
+
+
+
+    <!--CONTENT (SENSOR READINGS)-->
+    <div class="content-sign-in" id="content-sign-in">
+
+
+
+        <div class="d-flex flex-column flex-row-fluid" id="kt_wrapper">
+          <!--begin::Header-->
+          <div
+            id="kt_header"
+            class="header"
+            data-kt-sticky="true"
+            data-kt-sticky-name="header"
+            data-kt-sticky-offset="{default: '200px', lg: '300px'}"
+          >
+            <!--begin::Container-->
+            <div
+              class="container-fluid d-flex align-items-stretch justify-content-between"
+              id="kt_header_container"
+            >
+              <!--begin::Page title-->
+              <div
+                class="page-title d-flex flex-column align-items-start justify-content-center flex-wrap me-lg-2 pb-2 pb-lg-0"
+                data-kt-swapper="true"
+                data-kt-swapper-mode="prepend"
+                data-kt-swapper-parent="{default: '#kt_content_container', lg: '#kt_header_container'}"
+              >
+                <!--begin::Heading-->
+                <!--AUTHENTICATION BAR (USER DETAILS/LOGOUT BUTTON)-->
+                <div class="text-white" id="authentication-bar" style="display: none">
+                  <p>
+                    <span id="authentication-status">Usuario Logged</span>
+                    <span id="user-details">USEREMAIL</span>
+                  </p>
+                </div>
+                
+
+                <!--end::Breadcrumb-->
+              </div>
+
+              <!--begin::Toolbar wrapper-->
+              <div class="d-flex align-items-stretch flex-shrink-0">
+                <!--begin::Activities-->
+                <div class="d-flex align-items-center ms-1 ms-lg-3">
+                  <!--begin::drawer toggle-->
+                  <a href="/" id="logout-link" class="btn btn-outline btn-outline-dashed btn-outline-danger btn-active-light-danger">logout</a>
+
+
+                  
+                </div>
+                <!--end::Activities-->
+                <!--begin::Quick links-->
+
+              </div>
+              <!--end::Toolbar wrapper-->
+            </div>
+            <!--end::Container-->
+          </div>
+          <!--end::Header-->
+          <!--begin::Content-->
+
+
+
+
+
+
+
+          <div
+            class="content d-flex flex-column flex-column-fluid"
+            id="kt_content"
+          >
+
+
+            <!--begin::Container-->
+            <div class="container" id="kt_content_container">
+							<!--begin::Navbar-->
+							<div class="card bg-dark mb-5 mb-xl-10 shadow">
+								<div class="card-body pt-9 pb-0">
+									<!--begin::Details-->
+									<div class="d-flex flex-wrap flex-sm-nowrap mb-3">
+										<!--begin: Pic-->
+										<div class="me-17 mb-4">
+											<div class="symbol symbol-110px symbol-lg-160px symbol-fixed position-relative">
+												<img src="assets6/media/avatars/tractor_john_deere.png" alt="image" />
+
+
+
+												<div class="position-absolute translate-middle bottom-0 start-100 mb-0 bg-success rounded-circle border border-3 border-white h-20px w-20px">
+
+
+
+                        </div>
+											</div>
+										</div>
+										<!--end::Pic-->
+										<!--begin::Info-->
+										<div class="flex-grow-1">
+											<!--begin::Title-->
+											<div class="d-flex justify-content-between align-items-start flex-wrap mb-2">
+												<!--begin::User-->
+												<div class="d-flex flex-column">
+													<!--begin::Name-->
+													<div class="d-flex align-items-center mb-2">
+														<a  class="text-white text-hover-success fs-2 fw-bolder me-1 ls-1">John Deere 9620R</a>
+
+														
+													</div>
+													<!--end::Name-->
+													<!--begin::Info-->
+													<div class="d-flex flex-wrap fw-bold fs-6 mb-4 pe-2">
+														<a href="#" class="d-flex align-items-center text-white text-hover-success me-5 mb-2">
+														<!--begin::Svg Icon | path: icons/duotone/General/User.svg-->
+														<span class="svg-icon svg-icon-4 me-1">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ev-front" viewBox="0 0 16 16">
+                                <path d="M9.354 4.243a.188.188 0 0 0-.085-.218.186.186 0 0 0-.23.034L6.051 7.246a.188.188 0 0 0 .136.316h1.241l-.673 2.195a.188.188 0 0 0 .085.218c.075.043.17.03.23-.034l2.88-3.187a.188.188 0 0 0-.137-.316H8.572l.782-2.195Z"/>
+                                <path d="M4.819 2A2.5 2.5 0 0 0 2.52 3.515l-.792 1.848a.807.807 0 0 1-.38.404c-.5.25-.855.715-.965 1.262L.05 8.708a2.5 2.5 0 0 0-.049.49v.413c0 .814.39 1.543 1 1.997V13.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1.338c1.292.048 2.745.088 4 .088s2.708-.04 4-.088V13.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1.892c.61-.454 1-1.183 1-1.997v-.413c0-.165-.016-.329-.049-.49l-.335-1.68a1.807 1.807 0 0 0-.964-1.261.807.807 0 0 1-.381-.404l-.792-1.848A2.5 2.5 0 0 0 11.181 2H4.82ZM3.44 3.91A1.5 1.5 0 0 1 4.82 3h6.362a1.5 1.5 0 0 1 1.379.91l.792 1.847a1.8 1.8 0 0 0 .853.904c.222.112.381.32.43.564l.336 1.679c.02.097.029.195.029.294v.413a1.48 1.48 0 0 1-1.408 1.484c-1.555.07-3.786.155-5.592.155-1.806 0-4.037-.084-5.592-.155A1.479 1.479 0 0 1 1 9.611v-.413c0-.099.01-.197.03-.294l.335-1.68a.807.807 0 0 1 .43-.563c.383-.19.685-.511.853-.904l.792-1.848Z"/>
+                              </svg>
+														</span>
+														<!--end::Svg Icon-->performance: 456 kW</a>
+														<a href="#" class="d-flex align-items-center text-white text-hover-success me-5 mb-2">
+														<!--begin::Svg Icon | path: icons/duotone/Map/Marker1.svg-->
+														<span class="svg-icon svg-icon-4 me-1">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16">
+                                <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+                                <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+                              </svg>
+														</span>
+														<!--end::Svg Icon-->Speed: 40 km/h</a>
+														<a href="#" class="d-flex align-items-center text-white text-hover-success mb-2">
+														<!--begin::Svg Icon | path: icons/duotone/Communication/Mail-at.svg-->
+														<span class="svg-icon svg-icon-4 me-1">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-down-alt" viewBox="0 0 16 16">
+                                <path d="M3.5 3.5a.5.5 0 0 0-1 0v8.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L3.5 12.293V3.5zm4 .5a.5.5 0 0 1 0-1h1a.5.5 0 0 1 0 1h-1zm0 3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 0 1h-3zm0 3a.5.5 0 0 1 0-1h5a.5.5 0 0 1 0 1h-5zM7 12.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5z"/>
+                              </svg>
+														</span>
+														<!--end::Svg Icon-->Weight: 19.7 t</a>
+													</div>
+													<!--end::Info-->
+												</div>
+												<!--end::User-->
+
+											</div>
+											<!--end::Title-->
+											<!--begin::Stats-->
+											<div class="d-flex flex-wrap flex-stack">
+												<!--begin::Wrapper-->
+												<div class="d-flex flex-column flex-grow-1 pe-8">
+													<!--begin::Stats-->
+													<div class="d-flex flex-wrap">
+														<!--begin::Stat-->
+														<div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
+															<!--begin::Number-->
+															<div class="d-flex align-items-center">
+																<!--begin::Svg Icon | path: icons/duotone/Navigation/Arrow-up.svg-->
+																<span class="svg-icon svg-icon-3 svg-icon-success me-2">
+																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																			<polygon points="0 0 24 0 24 24 0 24" />
+																			<rect fill="#000000" opacity="0.5" x="11" y="5" width="2" height="14" rx="1" />
+																			<path d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z" fill="#000000" fill-rule="nonzero" />
+																		</g>
+																	</svg>
+																</span>
+																<!--end::Svg Icon-->
+																<div class="fs-2 fw-bolder text-success">
+                                    <p><span class="reading fs-2 fw-bolder text-success"><span id="hum"></span> &percnt;</span></p>
+                                </div>
+															</div>
+															<!--end::Number-->
+															<!--begin::Label-->
+															<div class="fw-bold fs-6 text-gray-400">PSI</div>
+															<!--end::Label-->
+														</div>
+														<!--end::Stat-->
+
+
+                            <div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
+															<!--begin::Number-->
+															<div class="d-flex align-items-center">
+																<!--begin::Svg Icon | path: icons/duotone/Navigation/Arrow-up.svg-->
+																<span class="svg-icon svg-icon-3 svg-icon-success me-2">
+																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																			<polygon points="0 0 24 0 24 24 0 24" />
+																			<rect fill="#000000" opacity="0.5" x="11" y="5" width="2" height="14" rx="1" />
+																			<path d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z" fill="#000000" fill-rule="nonzero" />
+																		</g>
+																	</svg>
+																</span>
+																<!--end::Svg Icon-->
+																<div class="fs-2 fw-bolder text-success">
+                                  <p><span class="reading fs-2 fw-bolder text-success"><span id="temp"></span> &deg;C</span></p>
+                                </div>
+
+                                
+															</div>
+															<!--end::Number-->
+															<!--begin::Label-->
+															<div class="fw-bold fs-6 text-gray-400">PSI</div>
+															<!--end::Label-->
+														</div>
+														<!--end::Stat-->
+
+                          														
+														<!--begin::Stat-->
+														<div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
+															<!--begin::Number-->
+															<div class="d-flex align-items-center">
+																<!--begin::Svg Icon | path: icons/duotone/Navigation/Arrow-up.svg-->
+																<span class="svg-icon svg-icon-3 svg-icon-success me-2">
+																	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																		<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																			<polygon points="0 0 24 0 24 24 0 24" />
+																			<rect fill="#000000" opacity="0.5" x="11" y="5" width="2" height="14" rx="1" />
+																			<path d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z" fill="#000000" fill-rule="nonzero" />
+																		</g>
+																	</svg>
+																</span>
+																<!--end::Svg Icon-->
+                                <div class="fs-2 fw-bolder text-success">
+                                  <p><span><span id="pres"></span> hPa</span></p>
+                                </div>
+                                
+															</div>
+															<!--end::Number-->
+															<!--begin::Label-->
+															<div class="fw-bold fs-6 text-gray-400">Success Rate</div>
+															<!--end::Label-->
+														</div>
+														<!--end::Stat-->
+													</div>
+													<!--end::Stats-->
+												</div>
+												<!--end::Wrapper-->
+												
+											</div>
+											<!--end::Stats-->
+										</div>
+										<!--end::Info-->
+									</div>
+									<!--end::Details-->
+
+								</div>
+							</div>
+							<!--end::Navbar-->
+
+
+
+
+
+
+
+              <!--begin::Row-->
+              <div class="row g-5 gx-xxl-8 mb-xxl-3">
+                <!--begin::Col-->
+                <div class="col-xxl-4">
+                  <!--begin::Engage Widget 1-->
+                  <div class="card bg-dark  card-xxl-stretch">
+                    <!--begin::Card body-->
+                    <div class="card-body d-flex flex-column justify-content-between h-100">
+
+                      <div class="d-flex align-items-center mb-2">
+
+
+                           <a class="btn btn-icon pulse pulse-warning text-white fs-5">
+                              <span class="svg-icon svg-icon-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <polygon points="0 0 24 0 24 24 0 24"></polygon>
+                                    <path d="M5.85714286,2 L13.7364114,2 C14.0910962,2 14.4343066,2.12568431 14.7051108,2.35473959 L19.4686994,6.3839416 C19.8056532,6.66894833 20,7.08787823 20,7.52920201 L20,20.0833333 C20,21.8738751 19.9795521,22 18.1428571,22 L5.85714286,22 C4.02044787,22 4,21.8738751 4,20.0833333 L4,3.91666667 C4,2.12612489 4.02044787,2 5.85714286,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
+                                    <rect fill="#000000" x="6" y="11" width="9" height="2" rx="1"></rect>
+                                    <rect fill="#000000" x="6" y="15" width="5" height="2" rx="1"></rect>
+                                  </g>
+                                </svg>
+
+
+
+                              </span>
+                              <span class="pulse-ring border-5"></span>
+                            </a>
+
+                      
+                        <!--begin::Card title-->
+                        <h3 class="card-title align-items-start flex-column">
+                          <span class="text-white fs-2 fw-bolder me-1 ls-1"
+                            >Error indicator</span
+                          >
+
+                        </h3>
+
+                      </div>
+                      <!--end::Card title-->
+                      <!--begin::Alert-->
+                        <div class="alert alert-dismissible bg-warning bg-opacity-5 border border-warning border-3 border-dashed d-flex flex-column flex-sm-row p-5 mb-1">
+                            <!--begin::Icon-->
+                            <span class="svg-icon svg-icon-2hx svg-icon-warning me-4 mb-5 mb-sm-0">
+                          
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"  version="1.1">
+                                      <path d="M11.1669899,4.49941818 L2.82535718,19.5143571 C2.557144,19.9971408 2.7310878,20.6059441 3.21387153,20.8741573 C3.36242953,20.9566895 3.52957021,21 3.69951446,21 L21.2169432,21 C21.7692279,21 22.2169432,20.5522847 22.2169432,20 C22.2169432,19.8159952 22.1661743,19.6355579 22.070225,19.47855 L12.894429,4.4636111 C12.6064401,3.99235656 11.9909517,3.84379039 11.5196972,4.13177928 C11.3723594,4.22181902 11.2508468,4.34847583 11.1669899,4.49941818 Z" fill="#000000" opacity="0.3"></path>
+                                      <rect fill="#000000" x="11" y="9" width="2" height="7" rx="1"></rect>
+                                      <rect fill="#000000" x="11" y="17" width="2" height="2" rx="1"></rect>
+                              </svg>
+                          
+                          
+                          </span>
+                            <!--end::Icon-->
+
+                            <!--begin::Wrapper-->
+                            <div class="d-flex flex-column pe-0 pe-sm-10">
+                                <!--begin::Title-->
+                                <span class="w-70px badge badge-warning me-4 text-dark">500 ERR</span>
+                                <!--end::Title-->
+                                <!--begin::Content-->
+                                <span class="text-white fs-5" >current exceeds normal.</span>
+                                <!--end::Content-->
+                            </div>
+                            <!--end::Wrapper-->
+
+                            <!--end::Close-->
+                        </div>
+                        <!--end::Alert-->
+                        <!--begin::Alert-->
+                        <div class="alert alert-dismissible bg-warning bg-opacity-5 border border-warning border-3 border-dashed d-flex flex-column flex-sm-row p-5 mb-1">
+                            <!--begin::Icon-->
+                            <span class="svg-icon svg-icon-2hx svg-icon-warning me-4 mb-5 mb-sm-0">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                      <path d="M11.1669899,4.49941818 L2.82535718,19.5143571 C2.557144,19.9971408 2.7310878,20.6059441 3.21387153,20.8741573 C3.36242953,20.9566895 3.52957021,21 3.69951446,21 L21.2169432,21 C21.7692279,21 22.2169432,20.5522847 22.2169432,20 C22.2169432,19.8159952 22.1661743,19.6355579 22.070225,19.47855 L12.894429,4.4636111 C12.6064401,3.99235656 11.9909517,3.84379039 11.5196972,4.13177928 C11.3723594,4.22181902 11.2508468,4.34847583 11.1669899,4.49941818 Z" fill="#000000" opacity="0.3"></path>
+                                      <rect fill="#000000" x="11" y="9" width="2" height="7" rx="1"></rect>
+                                      <rect fill="#000000" x="11" y="17" width="2" height="2" rx="1"></rect>
+                              </svg>
+                          
+                          </span>
+                            <!--end::Icon-->
+
+                            <!--begin::Wrapper-->
+                            <div class="d-flex flex-column pe-0 pe-sm-10">
+                                <!--begin::Title-->
+                                <span class="w-70px badge badge-warning text-dark me-4 ">500 ERR</span>
+                                <!--end::Title-->
+                                <!--begin::Content-->
+                                <span class="text-white fs-5">current exceeds normal.</span>
+                                <!--end::Content-->
+                            </div>
+                            <!--end::Wrapper-->
+
+                            <!--end::Close-->
+                        </div>
+                        <!--end::Alert-->
+
+
+                        <!--begin::Alert-->
+                        <div class="alert alert-dismissible bg-warning bg-opacity-5 border border-warning border-3 border-dashed d-flex flex-column flex-sm-row p-5 mb-1">
+                            <!--begin::Icon-->
+                            <span class="svg-icon svg-icon-2hx svg-icon-warning me-4 mb-5 mb-sm-0">
+                              
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                      <path d="M11.1669899,4.49941818 L2.82535718,19.5143571 C2.557144,19.9971408 2.7310878,20.6059441 3.21387153,20.8741573 C3.36242953,20.9566895 3.52957021,21 3.69951446,21 L21.2169432,21 C21.7692279,21 22.2169432,20.5522847 22.2169432,20 C22.2169432,19.8159952 22.1661743,19.6355579 22.070225,19.47855 L12.894429,4.4636111 C12.6064401,3.99235656 11.9909517,3.84379039 11.5196972,4.13177928 C11.3723594,4.22181902 11.2508468,4.34847583 11.1669899,4.49941818 Z" fill="#000000" opacity="0.3"></path>
+                                      <rect fill="#000000" x="11" y="9" width="2" height="7" rx="1"></rect>
+                                      <rect fill="#000000" x="11" y="17" width="2" height="2" rx="1"></rect>
+                              </svg>
+                          
+                          </span>
+                            <!--end::Icon-->
+
+                            <!--begin::Wrapper-->
+                            <div class="d-flex flex-column pe-0 pe-sm-10">
+                                <!--begin::Title-->
+                                <span class="w-70px badge badge-warning text-dark me-4">500 ERR</span>
+                                <!--end::Title-->
+                                <!--begin::Content-->
+                                <span class="text-white fs-5">current exceeds normal.</span>
+                                <!--end::Content-->
+                            </div>
+                            <!--end::Wrapper-->
+
+                            <!--end::Close-->
+                        </div>
+                        <!--end::Alert-->
+
+
+                        <!--begin::Alert-->
+                        <div class="alert alert-dismissible bg-warning bg-opacity-5 border border-warning border-3 border-dashed d-flex flex-column flex-sm-row p-5 mb-1">
+                            <!--begin::Icon-->
+                            <span class="svg-icon svg-icon-2hx svg-icon-warning me-4 mb-5 mb-sm-0">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                      <path d="M11.1669899,4.49941818 L2.82535718,19.5143571 C2.557144,19.9971408 2.7310878,20.6059441 3.21387153,20.8741573 C3.36242953,20.9566895 3.52957021,21 3.69951446,21 L21.2169432,21 C21.7692279,21 22.2169432,20.5522847 22.2169432,20 C22.2169432,19.8159952 22.1661743,19.6355579 22.070225,19.47855 L12.894429,4.4636111 C12.6064401,3.99235656 11.9909517,3.84379039 11.5196972,4.13177928 C11.3723594,4.22181902 11.2508468,4.34847583 11.1669899,4.49941818 Z" fill="#000000" opacity="0.3"></path>
+                                      <rect fill="#000000" x="11" y="9" width="2" height="7" rx="1"></rect>
+                                      <rect fill="#000000" x="11" y="17" width="2" height="2" rx="1"></rect>
+                              </svg>
+                          
+                          </span>
+                            <!--end::Icon-->
+
+                            <!--begin::Wrapper-->
+                            <div class="d-flex flex-column pe-0 pe-sm-10">
+                                <!--begin::Title-->
+                                <span class="w-70px badge badge-warning text-dark me-4">500 ERR</span>
+                                <!--end::Title-->
+                                <!--begin::Content-->
+                                <span class="text-white fs-5">current exceeds normal.</span>
+                                <!--end::Content-->
+                            </div>
+                            <!--end::Wrapper-->
+
+                            <!--end::Close-->
+                        </div>
+                        <!--end::Alert-->
+
+                        <!--begin::Alert-->
+                        <div class="alert alert-dismissible bg-warning bg-opacity-5 border border-warning border-3 border-dashed d-flex flex-column flex-sm-row p-5 mb-1">
+                            <!--begin::Icon-->
+                            <span class="svg-icon svg-icon-2hx svg-icon-warning me-4 mb-5 mb-sm-0">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                      <path d="M11.1669899,4.49941818 L2.82535718,19.5143571 C2.557144,19.9971408 2.7310878,20.6059441 3.21387153,20.8741573 C3.36242953,20.9566895 3.52957021,21 3.69951446,21 L21.2169432,21 C21.7692279,21 22.2169432,20.5522847 22.2169432,20 C22.2169432,19.8159952 22.1661743,19.6355579 22.070225,19.47855 L12.894429,4.4636111 C12.6064401,3.99235656 11.9909517,3.84379039 11.5196972,4.13177928 C11.3723594,4.22181902 11.2508468,4.34847583 11.1669899,4.49941818 Z" fill="#000000" opacity="0.3"></path>
+                                      <rect fill="#000000" x="11" y="9" width="2" height="7" rx="1"></rect>
+                                      <rect fill="#000000" x="11" y="17" width="2" height="2" rx="1"></rect>
+                              </svg>
+                          </span>
+                            <!--end::Icon-->
+
+                            <!--begin::Wrapper-->
+                            <div class="d-flex flex-column pe-0 pe-sm-10">
+                                <!--begin::Title-->
+                                <span class="w-70px badge badge-warning text-dark me-4">500 ERR</span>
+                                <!--end::Title-->
+                                <!--begin::Content-->
+                                <span class="text-white fs-5">current exceeds normal.</span>
+                                <!--end::Content-->
+                            </div>
+                            <!--end::Wrapper-->
+
+                            <!--end::Close-->
+                        </div>
+                        <!--end::Alert-->
+
+                        
+
+
+                      
+
+                    </div>
+                    <!--end::Card body-->
+                  </div>
+                  <!--end::Engage Widget 1-->
+                </div>
+
+
+                <!--begin::Col-->
+								<div class="col-xxl-8">
+									<!--begin::Chart Widget 1-->
+									<div class="card bg-dark  card-xxl-stretch mb-5 mb-xxl-8">
+										<!--begin::Card header-->
+										<div class="card-header border-0 pt-5">
+											<!--begin::Card title-->
+											<h3 class="card-title align-items-start flex-column">
+
+
+													<div class="d-flex align-items-center mb-2">
+		
+                            <a class="btn btn-icon pulse pulse-success">
+                              <span class="svg-icon svg-icon-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                  <circle fill="#000000" opacity="0.3" cx="12" cy="12" r="10"></circle>
+                                  <path d="M16.7689447,7.81768175 C17.1457787,7.41393107 17.7785676,7.39211077 18.1823183,7.76894473 C18.5860689,8.1457787 18.6078892,8.77856757 18.2310553,9.18231825 L11.2310553,16.6823183 C10.8654446,17.0740439 10.2560456,17.107974 9.84920863,16.7592566 L6.34920863,13.7592566 C5.92988278,13.3998345 5.88132125,12.7685345 6.2407434,12.3492086 C6.60016555,11.9298828 7.23146553,11.8813212 7.65079137,12.2407434 L10.4229928,14.616916 L16.7689447,7.81768175 Z" fill="#000000" fill-rule="nonzero"></path>
+                                </svg>
+
+                              </span>
+                              <span class="pulse-ring border-5"></span>
+                            </a>
+                            <span class="fs-2 fw-bolder me-1 text-white ls-1">Tractor telemetry</span>
+														
+													</div>
+
+                        <span class="text-gray-400 mt-2 fw-bold fs-6"
+                          >Intelligent platform for air pressure control of agricultural equipment tires. </span
+                        >
+
+											</h3>
+											<!--end::Card title-->
+											<!--begin::Card toolbar-->
+											<div class="card-toolbar">
+												<!--begin::Nav-->
+												<ul class="nav nav-pills">
+													<li class="nav-item me-1">
+														<a class="nav-link btn btn-active-success active btn-color-gray-400 btn-active-color-gray-700" data-kt-countup-tabs="true" data-bs-toggle="tab" href="#kt_chart_widget_1_tab_pane_1">Pressure</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link btn btn-active-success btn-color-gray-500 btn-active-color-gray-700" data-kt-countup-tabs="true" data-bs-toggle="tab" href="#kt_chart_widget_1_tab_pane_2">FFT</a>
+													</li>
+
+
+												</ul>
+												<!--end::Nav-->
+											</div>
+											<!--end::Card toolbar-->
+										</div>
+										<!--end::Header-->
+										<!--begin::Card body-->
+										<div class="card-body p-0">
+											<!--begin::Tab content-->
+											<div class="tab-content pt-10">
+												<!--begin::Tap pane-->
+												<div class="tab-pane fade active show" id="kt_chart_widget_1_tab_pane_1">
+													<!--begin::Row-->
+													<div class="row p-0 px-9">
+														<!--begin::Col-->
+
+														<!--end::Col-->
+
+
+
+														<!--begin::Col-->
+														<div class="col">
+
+
+
+														</div>
+														<!--end::Col-->
+
+
+                          <div class="row p-0 px-9">
+
+
+														<!--begin::Col-->
+														<div class="col-3" >
+															<!--begin::Stat-->
+															<div class="border border-dashed border-gray-300 text-center min-w-100px rounded pt-6 pb-4 my-3">
+                                   <div class="fs-2 fw-bolder text-white">
+                                      <p><span> Porcentaje: <span id="kt_slider_basic_porc"></span> &percnt;</span></p>
+                                    </div>
+															</div>
+															<!--end::Stat-->
+														</div>
+														<!--end::Col-->
+
+
+
+
+														<!--begin::Col-->
+														<div class="col">
+															<!--begin::Stat-->
+															<div class="text-center min-w-200px rounded pt-10 pb-4 my-3 ">
+                              
+                              <div id="form">
+
+
+                                  <div class="">
+                                      <div id="r-slider"></div>
+                                  </div>
+
+
+
+
+
+
+
+                              </div>
+
+
+
+                                
+
+															</div>
+															<!--end::Stat-->
+														</div>
+														<!--end::Col-->
+
+
+
+
+
+
+													</div>
+
+
+													</div>
+													<!--end::Row-->
+													<!--begin::Chart-->
+													<div class="px-4 mt-7" id="chart-temperature" style="height: 350px"></div>
+													<!--end::Chart-->
+												</div>
+												<!--end::Tap pane-->
+
+
+
+
+
+
+												<!--begin::Tap pane-->
+												<div class="tab-pane fade" id="kt_chart_widget_1_tab_pane_2">
+													<!--begin::Row-->
+
+													<!--end::Row-->
+													<!--begin::Chart-->
+													<div class="px-4 mt-7" id="chart-fft" style="height: 350px"></div>
+													<!--end::Chart-->
+												</div>
+												<!--end::Tap pane-->
+												<!--begin::Tap pane-->
+												</div>
+												<!--end::Tap pane-->
+											</div>
+											<!--end::Tab content-->
+										</div>
+										<!--end::Card body-->
+									</div>
+									<!--end::Chart Widget 1-->
+								</div>
+								<!--end::Col-->
+                
+
+
+              </div>
+              <!--end::Row-->
+
+            <!--end::Container-->
+          </div>
+          <!--end::Content-->
+          <!--begin::Footer-->
+          <div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
+            <!--begin::Container-->
+            <div
+              class="container-fluid d-flex flex-column flex-md-row flex-stack"
+            >
+
+
+            </div>
+            <!--end::Container-->
+          </div>
+          <!--end::Footer-->
+        </div>
+        <!--end::Wrapper-->
+      </div>
+      <!--end::Page-->
+    </div>
+    <!--end::Root-->
+    <!--begin::Drawers-->
+
+
+
+
+
+    <!--end::Modal - Create App-->
+    <!--end::Modals-->
+    <!--begin::Scrolltop-->
+    <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+      <!--begin::Svg Icon | path: icons/duotone/Navigation/Up-2.svg-->
+      <span class="svg-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="24px"
+          height="24px"
+          viewBox="0 0 24 24"
+          version="1.1"
+        >
+          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <polygon points="0 0 24 0 24 24 0 24" />
+            <rect
+              fill="#000000"
+              opacity="0.5"
+              x="11"
+              y="10"
+              width="2"
+              height="10"
+              rx="1"
+            />
+            <path
+              d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z"
+              fill="#000000"
+              fill-rule="nonzero"
+            />
+          </g>
+        </svg>
+      </span>
+      <!--end::Svg Icon-->
+    </div>
+
+    
+    </div>
+
+    <script src="scripts/index_db96.js"></script>
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/charts-definitions30.js"></script>
+
+
+    <!--begin::Javascript-->
+    <!--begin::Global Javascript Bundle(used by all pages)-->
+    <script src="assets6/plugins/global/plugins.bundle.js"></script>
+    <script src="assets6/js/scripts.bundle.js"></script>
+    <!--end::Global Javascript Bundle-->
+    <!--begin::Page Custom Javascript(used by this page)-->
+    <script src="assets6/js/custom/widgets.js"></script>
+
+
+
+    
+    <!--end::Page Custom Javascript-->
+    <!--end::Javascript-->
+  </body>
+</html>
