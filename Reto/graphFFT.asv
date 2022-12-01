@@ -1,0 +1,5 @@
+device = serialport("COM8", 115200);
+
+while(1)
+    val = read(device, 128*2, "single")
+end

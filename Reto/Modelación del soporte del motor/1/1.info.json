@@ -1,0 +1,122 @@
+{
+    "version": 0,
+    "model_name": "Eyector.SLDPRT",
+    "project_name": "Eyector",
+    "config_name": "Predeterminado",
+    "project_path": "C:\\Users\\Ponchito\\Documents\\Repo-Embebidos-Avanzados\\Reto\\Modelación del soporte del motor\\1\\1.xmlconfig",
+    "finished": true,
+    "mesh": {
+        "cells_total": 2536,
+        "cells_fluid": 2536,
+        "cells_solid": 3664,
+        "cells_fluid_containing_solid": 1704
+    },
+    "telemetry": {
+        "prepare_geometry_finished": "04:40:05-0600",
+        "prepare_geometry_total_time": 1,
+        "cpu_time_solver_total": 6,
+        "iteration": 50,
+        "travel": 1.2499999999999996,
+        "phys_time": 0.0,
+        "time_step": 0.0,
+        "last_iteration_finished": "04:40:10-0600",
+        "cpu_time_per_last_iter": 0,
+        "cpu_time_left": 0,
+        "iterations_per_travel": 41
+    },
+    "goals": [
+        {
+            "goal": {
+                "name": "SG Inlet Volume Flow Rate",
+                "unit": "volumetric flow",
+                "value": 1.0533509279782578e-05,
+                "progress": 100.0,
+                "criteria": 1e-08,
+                "delta": 1.6940658945086007e-21,
+                "use_in_convergence": true
+            }
+        },
+        {
+            "goal": {
+                "name": "SG Inlet Static Pressure Av",
+                "unit": "pressure and stress",
+                "value": 101346.94260287329,
+                "progress": 100.0,
+                "criteria": 4.862249465495552,
+                "delta": 0.10901061946060508,
+                "use_in_convergence": true
+            }
+        },
+        {
+            "goal": {
+                "name": "SG Main outlet Volume Flow Rate",
+                "unit": "volumetric flow",
+                "value": -1.4140001067760538e-05,
+                "progress": 100.0,
+                "criteria": 1.2643848956623845e-06,
+                "delta": 7.387056132791458e-07,
+                "use_in_convergence": true
+            }
+        },
+        {
+            "goal": {
+                "name": "SG Main outlet Velocity Av",
+                "unit": "speed and velocity",
+                "value": 0.18482844637192683,
+                "progress": 100.0,
+                "criteria": 0.01615971278057327,
+                "delta": 0.009840160762471878,
+                "use_in_convergence": true
+            }
+        },
+        {
+            "goal": {
+                "name": "SG Secondary outlet Volume Flow Rate",
+                "unit": "volumetric flow",
+                "value": 3.6041055104858346e-06,
+                "progress": 100.0,
+                "criteria": 1.2642328184769458e-06,
+                "delta": 7.387322017265027e-07,
+                "use_in_convergence": true
+            }
+        },
+        {
+            "goal": {
+                "name": "SG Secondary outlet Velocity Av",
+                "unit": "speed and velocity",
+                "value": 0.046620435661457967,
+                "progress": 100.0,
+                "criteria": 0.008531798248359732,
+                "delta": 0.007838781314747058,
+                "use_in_convergence": true
+            }
+        }
+    ],
+    "settings": {
+        "default_fluids": [
+            "Air"
+        ],
+        "analysis_type": "internal",
+        "heat_conduction_in_solids": false,
+        "radiation": false,
+        "time_dependent": false,
+        "gravity": false,
+        "flow_type": "laminar and turbulent",
+        "cavitation": false,
+        "high_mach_number": true,
+        "free_surface": false,
+        "structural": false,
+        "electromagnetism": false
+    },
+    "system_info": {
+        "product_name": "Flow Simulation 2022  x64 / 5593 / SOLVER ver. efd_2021_2.5587_14.01.2022+LamBL_4order_point_appr",
+        "cad_version": "SOLIDWORKS 2022 SP2.0",
+        "computer_name": "MIJANGOS",
+        "user_name": "Ponchito",
+        "os": "Windows 10 (or higher) (Version 10.0.22621)",
+        "cpu": "Intel(R) Core(TM) i5-9300HF CPU @ 2.40GHz",
+        "number_of_cores": 8,
+        "memory_avail": 17426,
+        "memory_total": 32688
+    }
+}

@@ -1,0 +1,7 @@
+2022-Nov-30 04:40:10
+Computer name:	MIJANGOS
+Number of cores used in calculation:	8
+Configuration name:	Predeterminado
+Project name:	Eyector
+
+Warnings on last iteration: 
