@@ -34,6 +34,7 @@ while(1)
         hold on
         stem(f, numeros1Side)
         stem(f, numeros2Side)
+        title("Espectro de frecuencias");
         grid on;
         xlabel("Frecuencia [Hz]");
         ylabel("Amplitud");

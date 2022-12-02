@@ -302,3 +302,18 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.cdt.dsf 4 10005 2022-11-28 21:53:27.609
 !MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.internal.ui.actions.DsfTerminateCommand$3$1@768a2079): Status OK: unknown code=0 OK' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-12-01 19:10:10.182
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2022-12-01 19:10:10.183
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2022-12-01 19:10:10.183
+!MESSAGE The project description file (.project) for 'Final' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2022-12-01 19:10:10.183
+!MESSAGE The project description file (.project) for 'Final_CM4' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2022-12-01 19:10:10.183
+!MESSAGE The project description file (.project) for 'Final_CM7' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-12-01 19:10:10.337
+!MESSAGE The workspace will exit with unsaved changes in this session.
